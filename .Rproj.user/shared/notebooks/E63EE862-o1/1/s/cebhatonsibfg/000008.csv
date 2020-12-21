@@ -1,0 +1,6 @@
+"0","highchart() %>% "
+"0","    hc_chart(type = 'column', polar=FALSE) %>%"
+"0","    hc_xAxis(categories = tab2$row_labels) %>% "
+"0","    hc_add_series(round(tab2$Media,1), name='media', dataLabels=list(enabled=TRUE), colorByPoint=TRUE) %>%"
+"0","    hc_credits(enabled=TRUE, text='InvestigaOnline.com', href ='https://www.investigaonline.com') %>%"
+"0","    hc_exporting(enabled=TRUE)"

@@ -1,0 +1,8 @@
+"0","tab$row_labels <- str_replace_all(tab$row_labels, var_lab(data$Q00260) , """")"
+"0","tab$row_labels <- str_replace_all(tab$row_labels, '\\|' , """")"
+"0","highchart() %>% "
+"0","    hc_chart(type = 'bar', polar=FALSE) %>%"
+"0","    hc_xAxis(categories = tab$row_labels) %>% "
+"0","    hc_add_series(round(tab$`#Total|%casos`,1), name='Casos', dataLabels=list(enabled=TRUE), colorByPoint=TRUE) %>%"
+"0","    hc_credits(enabled=TRUE, text='InvestigaOnline.com', href ='https://www.investigaonline.com') %>%"
+"0","    hc_exporting(enabled=TRUE)"

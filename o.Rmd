@@ -1,0 +1,81 @@
+---
+title: 'Objetivos y necesidades de información'
+---
+
+# Descripción del problema de investigación
+
+Una pandemia mundial es un territorio desconocido para todos, especialmente para los consumidores. Las personas se han visto obligadas a adaptarse a las restricciones personales, a la escasez de productos y la pérdida de puestos de trabajo, algo que en tiempos anteriores sólo ha correspondido a períodos de guerra o entreguerras. Se han experimentado nuevas realidades en lo que respecta a las relaciones con la familia, nuestra relación con el centro de estudios y/o trabajo, nuestro ecosistema de higiene personal y nuestra relación con el ocio y entretenimiento tanto personal como de grupo (Greenbook, 2020).
+
+A ello debemos sumar que "la crisis de la COVID-19 golpea a una sociedad con alrededor de un 33% de sus hogares en situación muy vulnerable financieramente, es decir con capacidad de aguantar menos de 3 meses, lo que se corresponde con los meses previos al verano donde gran parte de la actividad económica en España se mantendrá paralizada. Otro 24% de los hogares enfrenta la crisis con una situación vulnerable financieramente (aguantando de 3-9 meses), mientras que un 43% lo hace con una mayor seguridad financiera (más de 9 meses), pudiendo aguantar hasta 2021" (Arellano y Cámara, 2020).
+
+La sociedad española ha pasado, al igual que sus conciudadanos europeos por diferentes estados emocionales que retratan su comportamiento actual y futuro. Se ha pasado de la tristeza por lo que quedó en el camino, material, inmaterial y personal a aceptar con resignación lo sucedido y no acabar de entender la situación actual en la que se desea ver un futuro (TCA, 2020). Suponemos que el nuevo estado de alarma, decretado hoy 25 de octubre de 2020, alimentará más esa sensación de desconcierto y frustración que ya se intuía en la sociedad.
+
+En diferentes mercados y áreas económicas se han realizado diferentes investigaciones. Desde Jordania, Hashem (2020) ha demostrado que la COVID-19 ha potenciado la tendencia hacia el e-shopping y también ha mostrado un cambio de actitudes hacia el comercio online, pero aun así, la localización forzada del consumo que surge de la presencia de la COVID-19 plantea serias dudas sobre la capacidad de respuesta de las regiones. Desde Austria y Suecia, Vancic y Pärson (2020) indican que hay un cambio en el comportamiento de compra más allá del comportamiento de pánico, ya que la sensibilidad al precio ha aumentado y las percepciones sobre la calidad, en particular sobre la alimentación, han cambiado durante la pandemia. Desde USA, Zwanka y Buff (2020) listan la serie de cambios que han podido analizar en su análisis de cohortes generacionales (1) preferencia por el localismo o nacionalismo como seguridad de la cadena de suministro, (2) mayor cantidad de pedidos en línea, (3) retorno al hedonismo y a la búsqueda de experiencias ante el temor del contagio y muerte, (4) cambio en los hábitos de trabajo y en reconocimiento a los trabajadores sociales (sanitarios, cuidadores ...) (5) descontento político, (6) uso de transacciones online antes no disponibles de forma básica (atención médica, enseñanza...) (7) la realidad virtual reemplazando a los viajes, (8) mayor foco en la administración de lo que nos rodea, (9) buscar relaciones seguras, (10) cambios en actitud hacia la vida y en las creencias, (11) una mayor creencia positiva hacia el bien global más que hacia las libertades individuales. También Goff et al. (2020) aprovechan su estudio continuo en USA para medir la diferencia entre la fase prepandémica y la pandémica, concluyendo  que existen diferencias importantes en la actitud hacia los gobiernos y los mercados. Beck y Hensher (2020)  ha  mostrado también como los australianos han modificado sus hábitos de consumo y viaje, con gran resiliencia y adaptabilidad.
+
+Es por ello que es necesario realizar más investigaciones para comprender mejor estos cambios en el consumo con un examen directo de las percepciones de riesgo de los consumidores junto con otros datos empíricos y realizarse como parte del desarrollo de una comprensión integral basada en la teoría de las implicaciones del desplazamiento del consumo (Hall et al, 2020).
+
+En lo que respecta a las marcas, durante la pandemia ha existido una mayor sensación de que las empresas tienen una seria responsabilidad social de hacer lo correcto: proteger la seguridad de los empleados y consumidores, salvaguardar los puestos de trabajo, compartir los sacrificios de manera justa con los líderes superiores y responder con esfuerzos de ayuda comunitaria y filantropía (Greenbook 2020). Bajo la atención de los stakeholders, las industrias que están en primera línea para atender nuestras necesidades son las que están recibiendo más críticas. Las tiendas, el comercio minorista, los restaurantes y las farmacias enfrentan una fuerte presión pública para responder a la COVID-19. 
+
+Así pues, comenzar a redefinir los perfiles de sus clientes ahora y seguir ajustando nuestra estrategia de marketing a medida que se obtenga nueva información, se convierte en una obligación y ello nos llevará al orden y la estabilidad en nuestra relación con el cliente. Las soluciones desarrolladas deberán ofrecer al cliente una sensación de seguridad y control en sus vidas y en su relación con las marcas, su marca. (Greenbook 2020). 
+Así creemos que los objetivos a desarrollar en esta investigación deben estar centrados en estas cinco áreas de trabajo.
+
+* Analizar el impacto psicológico de la COVID-19 sobre el consumidor -ansiedad, temor, obsesión (escalas) -
+* Identificar los cambios en la UX de shopping del consumidor (actual, durante) pandemia
+* Identificar nuevos patrones de UX y comportamiento de compra en la nueva normalidad (vacuna ya existente)
+* Valorar cómo la sociedad que nos rodea ha actuado en la gestión: instituciones, empresas, marcas y ciudadanía en general
+* Perfilar el target
+
+# Resumen de objetivos y necesidades de información
+
+Para poder alcanzar estos objetivos y tras una reflexión profunda, creemos preciso alcanzar las siguientes necesidades de información que aquí listamos brevemente.
+
+1. Analizar el impacto psicológico de la COVID-19 sobre el consumidor -estrés, miedo, obsesión (escalas) -
+     1. Escala de ansiedad (Lee, 2020).
+     2. Escala de obsesión  (Lee, 2020).
+     3. Escala de temor (Ahorsu, et al., 2020).
+     4. Descripción personal (adjetiva, posible cualitativo) del estado de ánimo ante la situación.
+     5. Conciencia de cambio permanente en la realidad.
+     6. Incidencia de la COVID-19 en la sociedad futura y su realidad.
+     7. Valoración de la creencia de exposición a la COVID-19 en la realización de las compras en establecimientos físicos.
+2. Identificar los cambios en la UX de shopping del consumidor (actual, durante) pandemia	
+     1. Valoración del nivel de preocupación actual ante el entorno más próximo de compras
+     2. Identificación de cambios en el patrón de compra en cuanto a ...
+          1. Número de tiendas en las que compraba
+          2. Aumento o disminución en la actualidad de la frecuencia de compra
+          3. Identificar cambios en unidades por compra
+          4. Identificar cambios en cantidades (mayor o menor gasto)
+     3. Efectos de la pandemia en su forma de comprar (¿abierta?)
+          1. Existencia de algún efecto positivo debido a la pendemia
+          2. Existencia de algún efecto negativo debido a la pendemia
+     4. Afectación a hábitos futuros en la forma de compra
+     5. Cambio de marcas, falta de marcas en lineal, desabastecimiento
+     6. Consecuencias negativas de la pandemia para la sociedad (¿abierta?)
+     7. Consecuencias positivas de la pandemia para la sociedad (¿abierta?)
+3. Identificar nuevos patrones de UX y comportamiento de compra en la nueva normalidad
+     1. Identificar cambios en patrón de compra (repetir estructura objetivo 2)
+          1. Aumento o disminución en la actualidad de la frecuencia de compra
+          2. Identificar cambios en unidades por compra
+          3. Identificar cambios en cantidades (mayor o menor gasto)
+     2. Creencia de mejora en sociedad
+     3. Valoración de seguridad futura en establecimientos
+     4. Horizonte de seguridad
+     5. Cambios de importancia en factores esenciales de compra
+     6. Medidas que ayudan a sentirse más cómodos
+     7. Valoración de medidas de cambio
+     8. Qué actividades se realizarán más y qué actividades de dejarán de hacer
+4. Valorar cómo la sociedad que nos rodea ha actuado en la gestión: instituciones, empresas, marcas y ciudadanía en general
+     1. Conocer qué marcas han respondido mejor a la situación vivida [abierta]
+     2. Conocer qué instituciones han respondido mejor a la situación vivida
+     3. Conocer qué sectores han respondido mejor a la situación vivida
+5. Perfilar el target
+     1. Identificación de mayor aportador de ingresos
+     2. Situación laboral de mayor aportador
+     3. Profesión del sustentador principal cuenta propia
+     4. Profesión del sustentador principal cuenta ajena
+     5. Estudios del sustentador principal
+     6. Número de personas en el hogar
+     7. Número de personas que reciben un ingreso
+     8. Sexo del entrevistado
+     9. Edad del entrevistado
+     10. NCS (imputada)
+     11. Conocer si es comprador habitual de productos de alimentación e higiene en el hogar

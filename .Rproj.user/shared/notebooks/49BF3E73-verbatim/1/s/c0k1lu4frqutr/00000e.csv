@@ -1,0 +1,3 @@
+"0",""
+"0","kbl(data) %>% "
+"0","    kable_styling(bootstrap_options = c('striped', 'hover', 'condensed', 'responsive'))"

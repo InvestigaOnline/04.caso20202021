@@ -1,0 +1,155 @@
+---
+title: 'Covid-19 - Caso curso 2020 / 2021'
+subtitle: 'Universitat de València - Universidad Católica de València'
+author: 'Roberto Gil-Saura'
+date: 'Última actualización en `r Sys.Date()`'
+---
+
+# Introducción
+
+>  Documento redactado con fines académicos, en desarrollo y no revisado.
+
+Una pandemia mundial es un territorio desconocido para todos, especialmente para los consumidores. Las personas se han visto obligadas a adaptarse a las restricciones personales, a la escasez de productos y la pérdida de puestos de trabajo, algo que en tiempos anteriores sólo ha correspondido a períodos de guerra o entreguerras. Se han experimentado nuevas realidades en lo que respecta a las relaciones con la familia, nuestra relación con el centro de estudios y/o trabajo, nuestro ecosistema de higiene personal y nuestra relación con el ocio y entretenimiento tanto personal como de grupo (Greenbook, 2020).
+
+A ello debemos sumar que _"la crisis de la COVID-19 golpea a una sociedad con alrededor de un 33% de sus hogares en situación muy vulnerable financieramente, es decir con capacidad de aguantar menos de 3 meses, lo que se corresponde con los meses previos al verano donde gran parte de la actividad económica en España se mantendrá paralizada. Otro 24% de los hogares enfrenta la crisis con una situación vulnerable financieramente (aguantando de 3-9 meses), mientras que un 43% lo hace con una mayor seguridad financiera (más de 9 meses), pudiendo aguantar hasta 2021"_ (Arellano y Cámara, 2020).
+
+La sociedad española ha pasado, al igual que sus conciudadanos europeos por diferentes estados emocionales que retratan su comportamiento actual y futuro. Se ha pasado de la tristeza por lo que quedó en el camino, material, inmaterial y personal a aceptar con resignación lo sucedido y no acabar de entender la situación actual en la que se desea ver un futuro (TCA, 2020). Suponemos que el nuevo estado de alarma, decretado hoy 25 de octubre de 2020, alimentará más esa sensación de desconcierto y frustración que ya se intuía en la sociedad.
+
+# Antecedentes
+
+El decreto de estado de alarma el 13 de marzo de 2020, desencadenó una situación no vivida por la sociedad española de épocas recientes. Los consumidores de hoy nunca habían sufrido una situación de estas características que llevaba aparejado un cambio en el comportamiento de compra y en los hábitos de consumo.  Estos cambios en los hogares españoles deben ser analizados con la base de que la irrupción del coronavirus como pandemia global ha tenido efectos devastadores a nivel mundial, y que su situación está lejos de estabilizarse. No es posible todavía determinar el alcance futuro de estas crisis sin precedentes en el mundo contemporáneo, pero sus efectos en el corto plazo son evidentes, tanto a nivel sanitario, como económico y social y tanto en el ámbito colectivo como en el individual. 
+
+# Descripción de la situación actual
+
+Este período ha tenido, está teniendo y tendrá efecto en la sociedad de consumo. La caída del gasto de los hogares no tiene precedentes ya que durante el primer trimestre del año, el consumo privado cayó un 7,3% en el conjunto de España frente a lo observado en el cuarto trimestre de 2019. Dado que hasta la primera quincena de marzo la tendencia era de moderado crecimiento, esto implica que, durante las dos últimas semanas del mes de marzo, el descenso en el consumo debe haber rondado entre un 40 y un 45% (Cardoso, 2020). Según datos recogidos en publicaciones más recientes del servicio de estudios del BBVA Research (Ortiz y Rodrigo, 2020), las compras de alimentos en los hogares aumentaron cerca de un 110% justo antes de la entrada en vigor del confinamiento, para irse reduciendo paulatinamente con el paso de los días, si bien se estabilizó en torno a un 50 % más que las mismas semanas del año anterior. España ha sido uno de los países europeos donde primero llegó la pandemia, registrando un desplome del consumo del -60% a finales de marzo comparado con el año previo (Barreiro, 2020). Además, dada la severidad del virus y de las medidas de confinamiento impuestas para contenerlo, la recuperación está siendo más lenta que en otros países. De hecho, no se alcanzaron cifras de crecimiento positivas hasta principios de julio. Desde entonces, el consumo se ha mantenido en terreno positivo, especialmente durante el mes de agosto, cuando de media se registraron crecimientos superiores al 6%. Esta dinámica se corrigió a finales de septiembre con una ralentización del consumo dado el aumento de los contagios y nuevos confinamientos (Ortiz y Rodrigo, 2020). No disponemos de datos corrientes.
+
+_"Los especialistas en marketing están ansiosos por conocer las causas de la reactancia psicológica y las formas de minimizarla, a raíz de la pandemia de COVID-19"_ (Akhtar et al., 2020:892) y como se indica en el seguimiento a los datos de la pandemia; _"la pandemia ha supuesto un viaje emocional en el que la población ha transitado por diferentes estados anímicos"_ (TCK, 2020).
+
+![](https://drive.google.com/uc?export=view&id=12jXzrOSrxCzvR3RaX87fVpYd30bqR2DO)
+
+<div class='footer'>Fuente: TCK, 2020.</div>
+
+La invisibilidad de la COVID-19 junto con una información en constante cambio, generadora de ansiedad y nerviosismo, y unas restricciones personales han creado situaciones demasiado complejas para muchos individuos.  se ha desarrollado ya escalas que miden la ansiedad y la obsesión (Lee, 2020) o el temor hacia el virus (Ahorsu, 2020). Para hacer frente a todo el cambio, muchos de nosotros estamos actuando con  aquello que es llamado un cognitive lockdown, es decir un bloqueo de nuestro impulso cognitivo, un intenso deseo de certeza y de información veraz. En el ausencia de esa certeza, nos hemos volcado a realizar actividades y seguido comportamientos más de tiempos pretéritos y que creíamos olvidados en nuestra sociedad (Walpert, 2020): la cocina, nuestros espacios personales de vida (armarios, trasteros), nuestra actividad personal, nuestro microentorno materializado en esos jardines personales que nos han reconectado con la naturaleza, se han convertido en un esfuerzo por recuperar, controlar y calmar nuestros miedos. (Greenbook, 2020). 
+
+Las búsquedas en Internet han mostrado también las preocupaciones de los individuos como seres sociales. Calic (2020) y Walpert (2020) nos indican que esas búsquedas se han centrado en:
+
+* recopilar información y contenido esencial que necesitan para sobrellevar estos momentos, 
+* descubrir conexiones nuevas y canales de comunicación nuevos que pudieran acompañar, 
+* adaptarse a los cambios en las rutinas personales, 
+* elogiar a los héroes cotidianos (sanitarios, repartidores…), 
+* el cuidado de uno mismo y de los demás.
+
+Para L'Estrange (2020) el consumidor se ha centrado en este tiempo en:
+
+* una redefinición del espacio en el que vive, se ha acusado mucho más la economía local, 
+* se ha buscado el placer y la  estabilidad emocional en el entorno de nuestras plantas, nuestros jardines, nuestras mascotas, han cambiado nuestro hábitos sanitarios y de salud e higiene personal, 
+* se han incrementado las compras online y, 
+* se ha intensificado un enfoque hacia las marcas que han actuado bien
+
+La realidad es que la pandemia ha cambiado y cambiará el mundo de forma permanente en grandes y pequeños aspectos. Los especialistas en marketing que piensan en sus clientes, deben saber que la generación que llega a la mayoría de edad estará definida por esta pandemia y nuestra sociedad se verá afectada por una pérdida devastadora. 
+
+En diferentes mercados y áreas económicas se han realizado diferentes investigaciones. Desde Jordania, Hashem (2020) ha demostrado que la COVID-19 ha potenciado la tendencia hacia el e-shopping y también ha mostrado un cambio de actitudes hacia el comercio online, pero aun así, la localización forzada del consumo que surge de la presencia de la COVID-19 plantea serias dudas sobre la capacidad de respuesta de las regiones. Desde Austria y Suecia, Vancic y Pärson (2020) indican que hay un cambio en el comportamiento de compra más allá del comportamiento de pánico, ya que la sensibilidad al precio ha aumentado y las percepciones sobre la calidad, en particular sobre la alimentación, han cambiado durante la pandemia. Desde USA, Zwanka y Buff (2020) listan la serie de cambios que han podido analizar en su análisis de cohortes generacionales 
+
+* preferencia por el localismo o nacionalismo como seguridad de la cadena de suministro, 
+* mayor cantidad de pedidos en línea, 
+* retorno al hedonismo y a la búsqueda de experiencias ante el temor del contagio y muerte, 
+* cambio en los hábitos de trabajo y en reconocimiento a los trabajadores sociales (sanitarios, cuidadores ...) 
+* descontento político, 
+* uso de transacciones online antes no disponibles de forma básica (atención médica, enseñanza...) 
+* la realidad virtual reemplazando a los viajes, 
+* mayor foco en la administración de lo que nos rodea, 
+* buscar relaciones seguras, 
+* cambios en actitud hacia la vida y en las creencias, 
+* una mayor creencia positiva hacia el bien global más que hacia las libertades individuales. 
+
+También Goff et al. (2020) aprovechan su estudio continuo en USA para medir la diferencia entre la fase prepandémica y la pandémica, concluyendo  que existen diferencias importantes en la actitud hacia los gobiernos y los mercados. Beck y Hensher (2020)  ha  mostrado también como los australianos han modificado sus hábitos de consumo y viaje, con gran resiliencia y adaptabilidad.
+
+Es por ello que es necesario realizar más investigaciones para comprender mejor estos cambios en el consumo con un examen directo de las percepciones de riesgo de los consumidores junto con otros datos empíricos y realizarse como parte del desarrollo de una comprensión integral basada en la teoría de las implicaciones del desplazamiento del consumo (Hall et al, 2020).
+
+En lo que respecta a las marcas, durante la pandemia ha existido una mayor sensación de que las empresas tienen una seria responsabilidad social de hacer lo correcto: proteger la seguridad de los empleados y consumidores, salvaguardar los puestos de trabajo, compartir los sacrificios de manera justa con los líderes superiores y responder con esfuerzos de ayuda comunitaria y filantropía (Greenbook 2020). Bajo la atención de los stakeholders, las industrias que están en primera línea para atender nuestras necesidades son las que están recibiendo más críticas. Las tiendas, el comercio minorista, los restaurantes y las farmacias enfrentan una fuerte presión pública para responder a la COVID-19. 
+
+Así pues, comenzar a redefinir los perfiles de sus clientes ahora y seguir ajustando nuestra estrategia de marketing a medida que se obtenga nueva información, se convierte en una obligación y ello nos llevará al orden y la estabilidad en nuestra relación con el cliente. Las soluciones desarrolladas deberán ofrecer al cliente una sensación de seguridad y control en sus vidas y en su relación con las marcas, su marca. (Greenbook 2020). 
+
+Los consumidores ven las marcas como una fuerza para el cambio La respuesta a la crisis actual es un momento decisivo para muchas marcas. La respuesta de una empresa se analiza en las redes sociales. Muchos consumidores esperan que las marcas se apoyen en la crisis. 
+
+* El 40% de los consumidores quieren escuchar cómo las marcas están respondiendo al brote - (4A's op cit. en Greenbook, 2020) 
+* Incluso después de que regresen las señales de normalidad, los efectos duraderos de COVID en el marketing serán significativos y podrían consagrar el propósito de la marca, que ya estaba ganando terreno prepandémica. (ARF op cit. en Greenbook 2020)
+
+# Y después, ¿qué?
+
+Entonces, la gran pregunta es: ¿qué esperamos después de que el coronavirus desaparezca o esté bajo control mediante la vacunación u otros medios? Los datos, así como las actitudes de las personas, apuntan en la misma dirección (Greenbook, 2020):
+
+* Más personas seguirán trabajando desde casa que antes del COVID-19;
+* Se utilizarán más herramientas y aplicaciones de productividad para ayudar a facilitar que las empresas y las personas trabajen desde casa;
+* Los servicios de Video on Demand y otros servicios de transmisión continuarán creciendo y deberán cumplir con las nuevas expectativas de sus consumidores;
+* La gente hará más llamadas y chats de video con amigos y familiares;
+* Se viajará menos;
+* El Online Learning seguirá experimentando una mayor demanda y un crecimiento de suscriptores;
+* Las aplicaciones y servicios de compras y entregas cambiarán la forma en que compramos comestibles y productos.
+
+Con toda esta información, la situación trazada nos deja un panorama de estudio muy abierto, en el que desarrollar nuestra investigación. Vemos necesario abordar con un estudio que nos muestre claramente que ha sucedido en nuestro entorno de primera mano, intentando comprender y dar respuesta a las siguientes cuestiones:
+
+* ¿Cómo nos ha afectado la COVID-19 desde el punto de vista psicológico?
+* ¿Cambiaremos nuestra forma de relacionarnos como sociedad?
+* ¿Cambiará nuestra estabilidad emocional con repercusión por tanto en nuestra forma de consumir?
+* ¿Cambiarán nuestros patrones de conducta?
+* ¿Compraremos menos cantidad más veces?
+* ¿Compraremos más cantidad menos veces?
+* ¿Serán permanentes estos cambios o se volverá a la situación anterior a la pandemia?
+* ¿Cómo se ha actuado desde los diferentes stakeholders del mercado?
+
+Todos estos acontecimientos vividos, influyen en nuestro comportamiento de compra e influirán en nuestros patrones de consumo futuros. Como indica Kim (2020), la pandemia obligó a que el trabajo fuera virtualizado, y muchas empresas han realizado dicha transición con éxito en un corto período de tiempo, pero la investigación futura debería explorar los impactos de la expansión del comercio electrónico en el lanzamiento de nuevos productos, el desarrollo de productos, la gestión de productos y / o los precios y también los cambios en la experiencia de usuario.
+
+Para Sheth (2020), el bloqueo y el distanciamiento social ha generado importantes alteraciones en el comportamiento del consumidor. Los límites entre el trabajo y la vida ahora se difuminan a medida que la gente trabaja en casa, estudia en casa y se relaja en casa. Dado que el consumidor no puede ir a la tienda, la tienda tiene que ir al consumidor; es probable que se adopten nuevas tecnologías que faciliten el trabajo, el estudio y el consumo de una manera más conveniente y todo ello impondrá nuevos hábitos de consumo, especialmente en lugares públicos como aeropuertos, conciertos y parques públicos. 
+
+# Bibliografía
+
+---
+
+AHORSU, Daniel Kwasi, et al. The fear of COVID-19 scale: development and initial validation. International journal of mental health and addiction, 2020.
+
+AKHTAR, Naeem, et al. COVID-19 restrictions and consumers’ psychological reactance toward offline shopping freedom restoration. The Service Industries Journal, 2020, vol. 40, no 13-14, p. 891-913.
+
+ARELLANO, A., CÁMARA, N. BBVA RESEARCH - COVID-19, test de estrés para las finanzas de los hogares. Artículo en El País, 18 de mayo de 2020.
+
+BARREIRO, David. El consumo después de la covid-19: un universo de incertidumbre. Eurocarne: La revista internacional del sector cárnico, 2020, no 287, p. 17-31.
+
+BECK, Matthew J.; HENSHER, David A. Insights into the Impact of Covid-19 on Household Travel, Working, Activities And Shopping in Australia–the early days under Restrictions. 2020.
+
+CALIC, J. Las búsquedas revelan cómo las marcas y organizaciones pueden ayudar durante la pandemia del coronavirus, Think with Google, 2020.
+
+CARDOSO, M. BBVA RESEARCH - Consumo: caída sin precedentes y heterogénea en Cataluña. Artículo en La Vanguardia, 5 de junio de 2020.
+
+GOFF, Sandra, et al. The Effect of the COVID-19 Pandemic on Government-and Market-Attitudes. 2020.
+
+GREENBOOK. Forces of change. GREENBOOK.org, 2020.
+
+HALL, Michael C., et al. Beyond panic buying: consumption displacement and COVID-19. Journal of Service Management, 2020.
+
+HASHEM, Tareq N. Examining the Influence of COVID 19 Pandemic in Changing Customers' Orientation towards E-Shopping. Modern Applied Science, 2020, vol. 14, no 8.
+
+KIM, Rae Yule. The Impact of COVID-19 on Consumers: Preparing for Digital Sales. IEEE Engineering Management Review, 2020.
+
+LEE, Sherman A. Coronavirus Anxiety Scale: A brief mental health screener for COVID-19 related anxiety. Death studies, 2020, vol. 44, no 7, p. 393-401.
+
+L'ESTRANGE, J. 6 lockdown consumer trends that will be here for the long term, Think with Google, 2020.
+
+ORTIZ, A.; RODRIGO, T.. BBVA RESEARCH - La COVID-19, luces y sombras en el consumo. Artículo en EXPANSION, 13 de octubre de 2020.
+
+RODRIGO, T. BBVA RESEARCH - The COVID-19 economic impact in Real Time and High Definition. conferencia en Cotec - Big Data for Social Good, 2020.
+
+SHETH, Jagdish. Impact of Covid-19 on Consumer Behavior: Will the Old Habits Return or Die?. Journal of Business Research, 2020.
+
+TCK. EL PRINCIPIO DE LA NUEVA NORMALIDAD, El estado emocional y los nuevos hábitos de los españoles. The Cocktail Analysis, 2020.
+
+TCK. El salto digital en tiempos de Coronavirus. The Cocktail Analysis, 2020.
+
+TCK. LA DESESCALADA EMOCIONAL. El estado emocional y los nuevos hábitos de los españoles en el proceso de desescalada. The Cocktail Analysis, 2020.
+
+TCK. La fragmentación de la vivencia COVID. The Cocktail Analysis, 2020.
+
+VANCIC, Alexandra; PÄRSON, Gustav Filip Arne. Changed Buying Behavior in the COVID-19 pandemic: the influence of Price Sensitivity and Perceived Quality. 2020.
+
+WALPERT-LEVY, T. Consumidores y marcas ¿cómo nos ayudamos en tiempos de Covid?, Think with Google, 2020.
+
+ZWANKA, Russell J.; BUFF, Cheryl. COVID-19 Generation: A Conceptual Framework of the Consumer Behavioral Shifts to Be Caused by the COVID-19 Pandemic. Journal of International Consumer Marketing, 2020, p. 1-10.

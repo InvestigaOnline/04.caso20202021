@@ -1,0 +1,7 @@
+"0","tab <- data %>%"
+"0","	tab_cells('|'=unvr(Q00313)) %>%"
+"0","	tab_stat_cases(label='casos', total_row_position='none') %>%"
+"0","	tab_stat_cpct(label='%casos', total_row_position='none') %>%"
+"0","	tab_pivot(stat_position = 'inside_columns') %>%"
+"0","	tab_caption(paste('Objetivo 3: ',var_lab(data$Q00313), sep = ''))"
+"0","as.datatable_widget(tab)"

@@ -1,0 +1,7 @@
+"0","tab <- data %>%"
+"0","	tab_cells(Q00221) %>%"
+"0","	tab_stat_mean(label='media') %>%"
+"0","	tab_stat_sd(label='desviación') %>%"
+"0","	tab_pivot(stat_position = 'inside_columns') %>%"
+"0","	tab_caption('Objetivo 2: Cambios en el patrón de compra / consumo')"
+"0","as.datatable_widget(tab)"
