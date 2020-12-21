@@ -58,7 +58,7 @@ highchart() %>%
 
 Durante la crisis pandémica de la COVID-19 ¿en cuántas tiendas has comprado (en persona u online) productos de alimentación e higiene doméstica?
 
-```{r}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00222) %>% 
 	tab_stat_cases(label='casos', total_row_position='none') %>% 
