@@ -8,7 +8,7 @@ El segundo objetivo tenía que ver con los cambios en la UX que se habían produ
 
 El primer aspecto estaba relacionado con la valoración de la preocupación actual con la situación de la COVID-19 en el entorno más próximo de consumo.
 
-En general, y en una escala de 1 a 10, donde el 1 es nada preocupado y el 10 es muy preocupado, ¿cuál sería valoración de tu preocupación actual con la situación de la COVID-19 en tu entorno más próximo de consumo (tu ciudad, barrio, pueblo, núcleo más cercano)
+> _En general, y en una escala de 1 a 10, donde el 1 es nada preocupado y el 10 es muy preocupado, ¿cuál sería valoración de tu preocupación actual con la situación de la COVID-19 en tu entorno más próximo de consumo (tu ciudad, barrio, pueblo, núcleo más cercano) ?_
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -19,6 +19,9 @@ tab <- data %>%
 	t() %>% 
 	tab_caption(paste('Objetivo 2: ',var_lab(data$Q00210), sep = ''))
 as.datatable_widget(tab)
+```
+
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells('|'=unvr(Q00210)) %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
@@ -34,9 +37,12 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-Se utilizaba para completar esta valoración, tres aspectos relacionados directamente con el patrón de compra.
+Se utilizaban para completar esta valoración, tres aspectos relacionados directamente con el patrón de compra. Estas medidas pretendían mostrar si el hecho de estar confinados, había modificado los hábitos de compra y/o consumo por medio de un aumento o disminución del número de establecimientos donde se compraban los tipos de producto analizados.
 
-Antes de la crisis, ¿en cuántas tiendas comprabas regularmente productos de alimentación e higiene doméstica?
+Se comenzaba fijando el nº de tiendas en el que se compraba antes del confinamiento.
+
+> _Antes de la crisis, ¿en cuántas tiendas comprabas regularmente productos de alimentación e higiene doméstica?_
+
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -56,7 +62,9 @@ highchart() %>%
   hc_exporting(enabled=TRUE)
 ```
 
-Durante la crisis pandémica de la COVID-19 ¿en cuántas tiendas has comprado (en persona u online) productos de alimentación e higiene doméstica?
+Del mismo modo se procedía a saber cuál había sido el comportamiento del consumidor.
+
+> _Durante la crisis pandémica de la COVID-19 ¿en cuántas tiendas has comprado (en persona u online) productos de alimentación e higiene doméstica?_
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -66,6 +74,9 @@ tab <- data %>%
 	tab_pivot(stat_position = 'inside_columns') %>%
 	tab_caption('Objetivo 2: Cambios en el patrón de compra / consumo')
 as.datatable_widget(tab)
+```
+
+```{r echo = FALSE}
 tab$row_labels <- str_replace_all(tab$row_labels, var_lab(data$Q00222) , "")
 tab$row_labels <- str_replace_all(tab$row_labels, '\\|' , "")
 highchart() %>% 
@@ -76,7 +87,9 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-Pensando en las veces que realizas compras en productos de alimentación e higiene doméstica y en comparación con lo que hacías antes de la COVID-19 ¿dirías que ...?
+Del mismo modo, se pretendía valorar cómo había modificado la frecuencia de compra.
+
+> _Pensando en las veces que realizas compras en productos de alimentación e higiene doméstica y en comparación con lo que hacías antes de la COVID-19 ¿dirías que ...?_
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -86,6 +99,10 @@ tab <- data %>%
 	tab_pivot(stat_position = 'inside_columns') %>%
 	tab_caption('Objetivo 2: Cambios en el patrón de compra / consumo')
 as.datatable_widget(tab)
+```
+
+
+```{r echo = FALSE}
 tab$row_labels <- str_replace_all(tab$row_labels, var_lab(data$Q00223) , "")
 tab$row_labels <- str_replace_all(tab$row_labels, '\\|' , "")
 highchart() %>% 
@@ -96,7 +113,7 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-Pensando en lo que gastas en productos de alimentación e higiene doméstica y en comparación con lo que gastabas antes del brote de coronavirus, ¿dirías que ...?
+> _Pensando en lo que gastas en productos de alimentación e higiene doméstica y en comparación con lo que gastabas antes del brote de coronavirus, ¿dirías que ...?_
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -106,6 +123,9 @@ tab <- data %>%
 	tab_pivot(stat_position = 'inside_columns') %>%
 	tab_caption('Objetivo 2: Cambios en el patrón de compra / consumo')
 as.datatable_widget(tab)
+```
+
+```{r echo = FALSE}
 tab$row_labels <- str_replace_all(tab$row_labels, var_lab(data$Q00224) , "")
 tab$row_labels <- str_replace_all(tab$row_labels, '\\|' , "")
 highchart() %>% 
@@ -116,7 +136,9 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-¿Qué efectos positivos ha tenido en tu forma de abordar las compras de productos de alimentación e higiene doméstica durante la pandemia? Se procedió a la codificación del campo con los resultados que se pueden observar en la tabla. 
+Se solictó también en pregunta abierta que fue codificada a posteriori, tanto los efectos positivos como los negativos que hubieran poodido haber afectado a los hábitos de compra y/o consumo del entrevistado. 
+
+> _¿Qué efectos positivos ha tenido en tu forma de abordar las compras de productos de alimentación e higiene doméstica durante la pandemia? Se procedió a la codificación del campo con los resultados que se pueden observar en la tabla. _
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -129,9 +151,25 @@ as.datatable_widget(tab)
 ```
 Puede ser consultado el verbatim de la codificación [en este enlace](verbatim.html)
 
-Del mismo modo, ¿qué efectos negativos ha tenido en tu forma de abordar las compras de productos de alimentación e higiene doméstica durante la pandemia? Se procedió a la codificación del campo con los resultados que se pueden observar en la tabla. 
+```{r echo = FALSE}
+df <- data %>%
+	tab_cells('|'=unvr(mrset_f(P231_))) %>%
+	tab_stat_cpct(label='%casos', total_row_position = 'none') %>%
+	tab_pivot(stat_position = 'inside_columns')
+colnames(df) <- c('name','y')
+highchart() %>%
+    hc_title(text = 'Efectos positivos') %>% 
+    hc_chart(type = 'pie', polar = FALSE, inverted = FALSE) %>% 
+    hc_xAxis(categories = df$name) %>%
+    hc_add_series(df,name = "Edad", showInLegend = TRUE)%>%
+    hc_credits(enabled=TRUE, text='InvestigaOnline.com', href ='https://www.investigaonline.com') %>%
+    hc_exporting(enabled=TRUE)
+```
+
+> _Del mismo modo, ¿qué efectos negativos ha tenido en tu forma de abordar las compras de productos de alimentación e higiene doméstica durante la pandemia? Se procedió a la codificación del campo con los resultados que se pueden observar en la tabla. _
 
 ```{r echo = FALSE}
+data$P232_1 <- expss::recode(data$P232_1, 2 ~ 109, TRUE ~ copy, with_labels = TRUE)
 tab <- data %>%
 	tab_cells(mrset_f(P232_)) %>% 
 	tab_stat_cases(label='casos', total_row_position='none') %>% 
@@ -140,8 +178,23 @@ tab <- data %>%
 	tab_caption('Objetivo 2: Efectos negativos de la pandemia')
 as.datatable_widget(tab)
 ```
+```{r echo = FALSE}
+df <- data %>%
+	tab_cells('|'=unvr(mrset_f(P232_))) %>%
+	tab_stat_cpct(label='%casos', total_row_position = 'none') %>%
+	tab_pivot(stat_position = 'inside_columns')
+colnames(df) <- c('name','y')
+highchart() %>%
+    hc_title(text = 'Efectos negativos') %>% 
+    hc_chart(type = 'pie', polar = FALSE, inverted = FALSE) %>% 
+    hc_xAxis(categories = df$name) %>%
+    hc_add_series(df,name = "Edad", showInLegend = TRUE)%>%
+    hc_credits(enabled=TRUE, text='InvestigaOnline.com', href ='https://www.investigaonline.com') %>%
+    hc_exporting(enabled=TRUE)
+```
 
-Cuando la amenaza de la COVID-19 desaparezca, ¿cómo crees que afectará a tus hábitos de compra de productos de alimentación e higiene doméstica?
+
+> _Cuando la amenaza de la COVID-19 desaparezca, ¿cómo crees que afectará a tus hábitos de compra de productos de alimentación e higiene doméstica?_
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -151,6 +204,10 @@ tab <- data %>%
 	tab_pivot(stat_position = 'inside_columns') %>%
 	tab_caption('Objetivo 2: ')
 as.datatable_widget(tab)
+```
+
+```{r echo = FALSE}
+
 tab$row_labels <- str_replace_all(tab$row_labels, var_lab(data$Q00240) , "")
 tab$row_labels <- str_replace_all(tab$row_labels, '\\|' , "")
 highchart() %>% 
@@ -161,7 +218,7 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-En general, durante estos últimos meses, ¿qué has hecho si tu marca habitual no estaba en tu supermercado o tienda de compra habitual?
+> _En general, durante estos últimos meses, ¿qué has hecho si tu marca habitual no estaba en tu supermercado o tienda de compra habitual?_
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -181,7 +238,7 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-¿Qué crees que harás cuando esta crisis termine y tus marcas preferidas estén disponibles de nuevo?
+> _¿Qué crees que harás cuando esta crisis termine y tus marcas preferidas estén disponibles de nuevo?_
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -201,7 +258,7 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-Además del desafortunado número de muertes causadas por la COVID-19, ¿cuál de estos efectos crees que es la peor consecuencia de la pandemia?
+> _Además del desafortunado número de muertes causadas por la COVID-19, ¿cuál de estos efectos crees que es la peor consecuencia de la pandemia?_
 
 ```{r echo = FALSE}
 tab <- data %>%
@@ -221,7 +278,7 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-Más allá de todas las consecuencias negativas, ¿cuál crees que ha sido el efecto más positivo de la COVID-19? ¿Y en segundo lugar? ¿Y en tercer lugar? . Seleccione por orden.
+> _Más allá de todas las consecuencias negativas, ¿cuál crees que ha sido el efecto más positivo de la COVID-19? ¿Y en segundo lugar? ¿Y en tercer lugar? . Seleccione por orden._
 
 ```{r echo = FALSE}
 tab <- data %>%

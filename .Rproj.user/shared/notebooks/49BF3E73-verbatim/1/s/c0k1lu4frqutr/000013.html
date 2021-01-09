@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+<link href="lib/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+</head>
+<body>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Tipo </th>
+   <th style="text-align:left;"> Antecesor </th>
+   <th style="text-align:left;"> Descripción </th>
+   <th style="text-align:right;"> Código / Frecuencia </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Adidas </td>
+   <td style="text-align:right;"> 101 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Adidas </td>
+   <td style="text-align:left;"> -adidas </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Adidas </td>
+   <td style="text-align:left;"> Adidas </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Alcampo </td>
+   <td style="text-align:right;"> 102 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Alcampo </td>
+   <td style="text-align:left;"> Alcampo </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Alcampo </td>
+   <td style="text-align:left;"> Al campo </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Aldi </td>
+   <td style="text-align:right;"> 103 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Aldi </td>
+   <td style="text-align:left;"> Aldi </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Aldi </td>
+   <td style="text-align:left;"> -Aldy </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> amazon </td>
+   <td style="text-align:right;"> 104 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> amazon </td>
+   <td style="text-align:left;"> amazon- </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> amazon </td>
+   <td style="text-align:left;"> -amazon </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> amazon </td>
+   <td style="text-align:left;"> Amazon </td>
+   <td style="text-align:right;"> 52 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Apple </td>
+   <td style="text-align:right;"> 105 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Apple </td>
+   <td style="text-align:left;"> -apple </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Apple </td>
+   <td style="text-align:left;"> Apple </td>
+   <td style="text-align:right;"> 6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Ariel </td>
+   <td style="text-align:right;"> 106 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ariel </td>
+   <td style="text-align:left;"> -ariel </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ariel </td>
+   <td style="text-align:left;"> Ariel </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Asevi </td>
+   <td style="text-align:right;"> 107 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Asevi </td>
+   <td style="text-align:left;"> -Asevi </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Asevi </td>
+   <td style="text-align:left;"> Asevi </td>
+   <td style="text-align:right;"> 11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Bimbo </td>
+   <td style="text-align:right;"> 108 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Bimbo </td>
+   <td style="text-align:left;"> -bimbo </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Bimbo </td>
+   <td style="text-align:left;"> Bimbo </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Burger King </td>
+   <td style="text-align:right;"> 109 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Burger King </td>
+   <td style="text-align:left;"> Burger King </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Burger King </td>
+   <td style="text-align:left;"> Burguer King </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Campofrio </td>
+   <td style="text-align:right;"> 110 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Campofrio </td>
+   <td style="text-align:left;"> Campo frio </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Campofrio </td>
+   <td style="text-align:left;"> Campofrio </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> carrefour </td>
+   <td style="text-align:right;"> 111 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> carrefour </td>
+   <td style="text-align:left;"> carrefour </td>
+   <td style="text-align:right;"> 34 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> carrefour </td>
+   <td style="text-align:left;"> -carrefour </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> carrefour </td>
+   <td style="text-align:left;"> Carrefur </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Coca cola </td>
+   <td style="text-align:right;"> 112 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Coca cola </td>
+   <td style="text-align:left;"> Coca cola </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Coca cola </td>
+   <td style="text-align:left;"> Cocacola </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Coca cola </td>
+   <td style="text-align:left;"> -coca cola </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Coca cola </td>
+   <td style="text-align:left;"> -cocacola </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Coca cola </td>
+   <td style="text-align:left;"> Coca-Cola </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Cola Cao </td>
+   <td style="text-align:right;"> 113 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Cola Cao </td>
+   <td style="text-align:left;"> Cola cao </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Cola Cao </td>
+   <td style="text-align:left;"> Colacao </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Cola Cao </td>
+   <td style="text-align:left;"> -colacao </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Consum </td>
+   <td style="text-align:right;"> 114 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Consum </td>
+   <td style="text-align:left;"> - Consum </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Consum </td>
+   <td style="text-align:left;"> -consum </td>
+   <td style="text-align:right;"> 9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Consum </td>
+   <td style="text-align:left;"> -charter </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Consum </td>
+   <td style="text-align:left;"> Comsum </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Consum </td>
+   <td style="text-align:left;"> Consum </td>
+   <td style="text-align:right;"> 64 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Consum </td>
+   <td style="text-align:left;"> -consun </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Cruz Roja </td>
+   <td style="text-align:right;"> 115 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Cruz Roja </td>
+   <td style="text-align:left;"> -cruz roja </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Cruz Roja </td>
+   <td style="text-align:left;"> Cruz roja </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Danone </td>
+   <td style="text-align:right;"> 116 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Danone </td>
+   <td style="text-align:left;"> Danone </td>
+   <td style="text-align:right;"> 13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Danone </td>
+   <td style="text-align:left;"> -danone </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Decathlon </td>
+   <td style="text-align:right;"> 117 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Decathlon </td>
+   <td style="text-align:left;"> -decathlon </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Decathlon </td>
+   <td style="text-align:left;"> Decathlon </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Decathlon </td>
+   <td style="text-align:left;"> Decatlón - </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Decathlon </td>
+   <td style="text-align:left;"> Decatlón </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Dia </td>
+   <td style="text-align:right;"> 118 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Dia </td>
+   <td style="text-align:left;"> Dia </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:right;"> 119 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> Corte ingled </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> corte ingles </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> Corte Inglés </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> -corte ingles </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> El corte infles </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> -el corte ingles </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> El corte inglés </td>
+   <td style="text-align:right;"> 10 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> Hipercor </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> el corte ingles </td>
+   <td style="text-align:left;"> Supercor </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Gallo </td>
+   <td style="text-align:right;"> 120 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Gallo </td>
+   <td style="text-align:left;"> -gallo </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Gallo </td>
+   <td style="text-align:left;"> Gallo </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Glovo </td>
+   <td style="text-align:right;"> 121 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Glovo </td>
+   <td style="text-align:left;"> Globo </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Glovo </td>
+   <td style="text-align:left;"> GLOVO </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Glovo </td>
+   <td style="text-align:left;"> Glovoo </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Google </td>
+   <td style="text-align:right;"> 122 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Google </td>
+   <td style="text-align:left;"> Google </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> iberdrola </td>
+   <td style="text-align:right;"> 123 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> iberdrola </td>
+   <td style="text-align:left;"> iberdrola </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> ikea </td>
+   <td style="text-align:right;"> 124 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> ikea </td>
+   <td style="text-align:left;"> ikea </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:right;"> 125 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:left;"> grupo Inditex </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:right;"> 37 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:left;"> Oysho </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:left;"> Pull and bear </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:left;"> Stradi </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:left;"> zara </td>
+   <td style="text-align:right;"> 19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> inditex </td>
+   <td style="text-align:left;"> -zara </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Leche Asturiana </td>
+   <td style="text-align:right;"> 126 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Leche Asturiana </td>
+   <td style="text-align:left;"> Asturiana </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Leche Asturiana </td>
+   <td style="text-align:left;"> -asturiana </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Leche Asturiana </td>
+   <td style="text-align:left;"> -Elche asturiana </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Leche Asturiana </td>
+   <td style="text-align:left;"> La asturiana </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Leche Asturiana </td>
+   <td style="text-align:left;"> -leche la asturiana </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Lidl </td>
+   <td style="text-align:right;"> 127 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Lidl </td>
+   <td style="text-align:left;"> Lidel </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Lidl </td>
+   <td style="text-align:left;"> Lidl </td>
+   <td style="text-align:right;"> 13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Lidl </td>
+   <td style="text-align:left;"> -lidl </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Lidl </td>
+   <td style="text-align:left;"> -Lydl </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> L'Oreal </td>
+   <td style="text-align:right;"> 128 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> L'Oreal </td>
+   <td style="text-align:left;"> L?Oreal </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> L'Oreal </td>
+   <td style="text-align:left;"> Loreal </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Mahou </td>
+   <td style="text-align:right;"> 129 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Mahou </td>
+   <td style="text-align:left;"> Mahou </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:right;"> 130 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> -acendado </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> Acendado </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> -bosque verde </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> Bosque verde </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> Bosqueverde </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> Café molido hacendado </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> -deliplus </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> Deliplus </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> DELYPLUSS </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> -hacendado </td>
+   <td style="text-align:right;"> 11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> hacendado </td>
+   <td style="text-align:right;"> 45 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> mecadona </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:right;"> 120 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> -mercadona </td>
+   <td style="text-align:right;"> 18 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> mercadona </td>
+   <td style="text-align:left;"> Mercafona </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Movistar </td>
+   <td style="text-align:right;"> 131 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Movistar </td>
+   <td style="text-align:left;"> Moviestar </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Movistar </td>
+   <td style="text-align:left;"> Movistar </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:right;"> 132 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:left;"> -nescafe </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:left;"> Nescafe </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:left;"> Nescafe Dolce Gusto </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:left;"> Nespresso </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:left;"> -nestle </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:left;"> Nestle </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nestlé </td>
+   <td style="text-align:left;"> -netsle </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Netflix </td>
+   <td style="text-align:right;"> 133 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Netflix </td>
+   <td style="text-align:left;"> Netflix </td>
+   <td style="text-align:right;"> 9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Nike </td>
+   <td style="text-align:right;"> 134 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nike </td>
+   <td style="text-align:left;"> -nike </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Nike </td>
+   <td style="text-align:left;"> Nike </td>
+   <td style="text-align:right;"> 20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:right;"> 135 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -. </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -... </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -.... </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -....l </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -1 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -2 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -3 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -5 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -7 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -8 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -a </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -b </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -c </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -kk </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -m </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -me da igual </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> Nada me viene </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> Ni idea </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> Nine </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:right;"> 16 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -ninguna </td>
+   <td style="text-align:right;"> 12 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> no </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -no Lo de </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> No lo se- </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -no Lo se </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> No lo se </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -no recuerdo ninguna mas </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -no sé </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -no se </td>
+   <td style="text-align:right;"> 6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> No sé </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> No se </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -no se me ocurre nada </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> se me </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Ninguna </td>
+   <td style="text-align:left;"> -x </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Pascual </td>
+   <td style="text-align:right;"> 136 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Pascual </td>
+   <td style="text-align:left;"> Pascual </td>
+   <td style="text-align:right;"> 6 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Pepsi </td>
+   <td style="text-align:right;"> 137 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Pepsi </td>
+   <td style="text-align:left;"> Pepsi </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> pfizer </td>
+   <td style="text-align:right;"> 138 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> pfizer </td>
+   <td style="text-align:left;"> Anian </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> pfizer </td>
+   <td style="text-align:left;"> Fizer </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> pfizer </td>
+   <td style="text-align:left;"> pfizer </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> pfizer </td>
+   <td style="text-align:left;"> Pzifer </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> pfizer </td>
+   <td style="text-align:left;"> Pzzer </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Real Madrid </td>
+   <td style="text-align:right;"> 139 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Real Madrid </td>
+   <td style="text-align:left;"> Real Madrid </td>
+   <td style="text-align:right;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Repsol </td>
+   <td style="text-align:right;"> 140 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Repsol </td>
+   <td style="text-align:left;"> Repsol </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Repsol </td>
+   <td style="text-align:left;"> Respol </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> Sanytol </td>
+   <td style="text-align:right;"> 141 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Sanytol </td>
+   <td style="text-align:left;"> Sanitol </td>
+   <td style="text-align:right;"> 22 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Sanytol </td>
+   <td style="text-align:left;"> -Sanytol </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> Sanytol </td>
+   <td style="text-align:left;"> Sanytol </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> CLAVE </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> uber </td>
+   <td style="text-align:right;"> 142 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> uber </td>
+   <td style="text-align:left;"> -uber </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> uber </td>
+   <td style="text-align:left;"> UBER </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> LITERAL </td>
+   <td style="text-align:left;"> uber </td>
+   <td style="text-align:left;"> Ubereats </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+</tbody>
+</table> <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"]]}})</script><script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

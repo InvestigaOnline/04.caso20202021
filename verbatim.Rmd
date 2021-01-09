@@ -4,8 +4,6 @@ title: "Verbatim"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(readr)
-library(kableExtra)
 ```
 
 El siguiente documento presenta el resultado de la codificación de las preguntas abiertas. El procedimiento seguido ha sido el estándar:

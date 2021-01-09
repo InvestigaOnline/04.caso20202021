@@ -22,6 +22,8 @@ Para analizar la consistencia de las escalas utilizadas, realizamos un análisis
 
 Se han revisado las medidas derivadas de la obtención del coeficiente Alfa de Cronbach, así como la manera de interpretar este coeficiente y los resultados asociados a él más relevantes.  Los resultados obtenidos de la función `alpha()` nos pueden ayudar a un mejor análisis de la confiabilidad e una escala, pero es importante recordar qué puede y qué no puede decirnos el coeficiente Alfa de Cronbach con respecto a una escala psicométrica, para evitar malas interpretaciones. El Alfa de Cronbach nos da una medida de la consistencia interna de una escala, que sus ítems apuntan en la misma dirección, pero no nos dice nada sobre su validez o la calidad de sus reactivos.  Estas son características diferentes de las escalas que requieren de otros análisis.
 
+Aquí mostramos los resultados de este análisis.
+
 ## Escala de ansiedad
 
 ```{r echo = FALSE}

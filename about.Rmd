@@ -2,10 +2,12 @@
 title: 'Acerca de ...'
 ---
 
-# ¿Quiénes somos?
-
 ```{r echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, comment = NA)
+```
+
+
+```{r echo = FALSE}
 suppressMessages(library(dplyr,quietly =TRUE))
 suppressMessages(library(stringr,quietly =TRUE))
 suppressMessages(library(expss,quietly =TRUE))
@@ -13,6 +15,8 @@ suppressMessages(library(highcharter,quietly =TRUE))
 suppressMessages(library(kableExtra,quietly =TRUE))
 suppressMessages(library(psych,quietly =TRUE))
 suppressMessages(library(wordcloud,quietly =TRUE))
+suppressMessages(library(readr,quietly =TRUE))
+
 set.seed(311265)
 
 data.total <- suppressMessages(read_spss('~/R/r-data/04.caso20202021/Datos_IO2020CV19.sav'))
@@ -27,6 +31,9 @@ col_stops <-data.frame(q = c(0.25, 0.50, 0.75),c = c('#CD5C5C', '#F0E68C', '#3CB
 stops <- list_parse2(col_stops)
 options(highcharter.theme = hc_theme_economist(tooltip = list(valueDecimals = 1)))
 ```
+
+
+# ¿Quiénes somos?
 
 <span style="class= 'centrado' width: 100%; ">![](https://drive.google.com/uc?export=view&id=1RuRVvr4CNzrJZrXlOWBmzPuTUaS-vir1)</span>
 
