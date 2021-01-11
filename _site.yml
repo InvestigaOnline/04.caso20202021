@@ -2,16 +2,20 @@ name: "Covid-19 - Caso 2020 / 2021"
 navbar:
   title: "Covid-19"
   left:
-    - text: "Índice"
+    - text: "Introducción"
       href: index.html
-    - text: "Ficha"
-      href: ficha.html
-    - text: "Perfil"
-      href: perfil.html
-    - text: "Resultados"
+    - text: "Preliminares"
       menu:
+      - text: "Análisis"
+        href: analisis.html
+      - text: "Ficha"
+        href: ficha.html
+      - text: "Perfil"
+        href: perfil.html
       - text: "Objetivos"
         href: o.html
+    - text: "Resultados"
+      menu:
       - text: "Objetivo.1"
         href: o1.html
       - text: "Objetivo.2"
@@ -32,6 +36,8 @@ navbar:
         href: otros04.html
       - text: "Verbatim"
         href: verbatim.html
+    - text: "Conclusiones"
+      href: conclusiones.html
   right:
     - text: "Acerca de ..."
       icon: fa-question-circle

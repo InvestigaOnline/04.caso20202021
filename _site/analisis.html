@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Análisis de situación</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<!DOCTYPE html>
+<head><link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1JbeH3BFMq-xjBIroa3lcnqhOJS4Ap-RB">&nbsp;</head>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Covid-19</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Introducción</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Preliminares
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="analisis.html">Análisis</a>
+    </li>
+    <li>
+      <a href="ficha.html">Ficha</a>
+    </li>
+    <li>
+      <a href="perfil.html">Perfil</a>
+    </li>
+    <li>
+      <a href="o.html">Objetivos</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resultados
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="o1.html">Objetivo.1</a>
+    </li>
+    <li>
+      <a href="o2.html">Objetivo.2</a>
+    </li>
+    <li>
+      <a href="o3.html">Objetivo.3</a>
+    </li>
+    <li>
+      <a href="o4.html">Objetivo.4</a>
+    </li>
+    <li>
+      <a href="escalas.html">Escalas</a>
+    </li>
+    <li>
+      <a href="otros01.html">Tablas cruzadas (1)</a>
+    </li>
+    <li>
+      <a href="otros02.html">Tablas cruzadas (2)</a>
+    </li>
+    <li>
+      <a href="otros03.html">Tablas cruzadas (3)</a>
+    </li>
+    <li>
+      <a href="otros04.html">Tablas cruzadas (4)</a>
+    </li>
+    <li>
+      <a href="verbatim.html">Verbatim</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="conclusiones.html">Conclusiones</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">
+    <span class="fas fa-question-circle"></span>
+     
+    Acerca de ...
+  </a>
+</li>
+<li>
+  <a href="https://www.investigaonline.com">
+    <span class="fas fa-search-plus"></span>
+     
+    InvestigaOnline.com
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Análisis de situación</h1>
+
+</div>
+
+
+<div id="introducción" class="section level1">
+<h1>Introducción</h1>
+<p>Una pandemia mundial es un territorio desconocido para todos, especialmente para los consumidores. Las personas se han visto obligadas a adaptarse a las restricciones personales, a la escasez de productos y la pérdida de puestos de trabajo, algo que en tiempos anteriores sólo ha correspondido a períodos de guerra o entreguerras. Se han experimentado nuevas realidades en lo que respecta a las relaciones con la familia, nuestra relación con el centro de estudios y/o trabajo, nuestro ecosistema de higiene personal y nuestra relación con el ocio y entretenimiento tanto personal como de grupo (Greenbook, 2020).</p>
+<p>A ello debemos sumar que <em>“la crisis de la COVID-19 golpea a una sociedad con alrededor de un 33% de sus hogares en situación muy vulnerable financieramente, es decir con capacidad de aguantar menos de 3 meses, lo que se corresponde con los meses previos al verano donde gran parte de la actividad económica en España se mantendrá paralizada. Otro 24% de los hogares enfrenta la crisis con una situación vulnerable financieramente (aguantando de 3-9 meses), mientras que un 43% lo hace con una mayor seguridad financiera (más de 9 meses), pudiendo aguantar hasta 2021”</em> (Arellano y Cámara, 2020).</p>
+<p>La sociedad española ha pasado, al igual que sus conciudadanos europeos por diferentes estados emocionales que retratan su comportamiento actual y futuro. Se ha pasado de la tristeza por lo que quedó en el camino, material, inmaterial y personal a aceptar con resignación lo sucedido y no acabar de entender la situación actual en la que se desea ver un futuro (TCA, 2020). Suponemos que el nuevo estado de alarma, decretado hoy 25 de octubre de 2020, alimentará más esa sensación de desconcierto y frustración que ya se intuía en la sociedad.</p>
+</div>
+<div id="antecedentes" class="section level1">
+<h1>Antecedentes</h1>
+<p>El decreto de estado de alarma el 13 de marzo de 2020, desencadenó una situación no vivida por la sociedad española de épocas recientes. Los consumidores de hoy nunca habían sufrido una situación de estas características que llevaba aparejado un cambio en el comportamiento de compra y en los hábitos de consumo. Estos cambios en los hogares españoles deben ser analizados con la base de que la irrupción del coronavirus como pandemia global ha tenido efectos devastadores a nivel mundial, y que su situación está lejos de estabilizarse. No es posible todavía determinar el alcance futuro de estas crisis sin precedentes en el mundo contemporáneo, pero sus efectos en el corto plazo son evidentes, tanto a nivel sanitario, como económico y social y tanto en el ámbito colectivo como en el individual.</p>
+</div>
+<div id="descripción-de-la-situación-actual" class="section level1">
+<h1>Descripción de la situación actual</h1>
+<p>Este período ha tenido, está teniendo y tendrá efecto en la sociedad de consumo. La caída del gasto de los hogares no tiene precedentes ya que durante el primer trimestre del año, el consumo privado cayó un 7,3% en el conjunto de España frente a lo observado en el cuarto trimestre de 2019. Dado que hasta la primera quincena de marzo la tendencia era de moderado crecimiento, esto implica que, durante las dos últimas semanas del mes de marzo, el descenso en el consumo debe haber rondado entre un 40 y un 45% (Cardoso, 2020). Según datos recogidos en publicaciones más recientes del servicio de estudios del BBVA Research (Ortiz y Rodrigo, 2020), las compras de alimentos en los hogares aumentaron cerca de un 110% justo antes de la entrada en vigor del confinamiento, para irse reduciendo paulatinamente con el paso de los días, si bien se estabilizó en torno a un 50 % más que las mismas semanas del año anterior. España ha sido uno de los países europeos donde primero llegó la pandemia, registrando un desplome del consumo del -60% a finales de marzo comparado con el año previo (Barreiro, 2020). Además, dada la severidad del virus y de las medidas de confinamiento impuestas para contenerlo, la recuperación está siendo más lenta que en otros países. De hecho, no se alcanzaron cifras de crecimiento positivas hasta principios de julio. Desde entonces, el consumo se ha mantenido en terreno positivo, especialmente durante el mes de agosto, cuando de media se registraron crecimientos superiores al 6%. Esta dinámica se corrigió a finales de septiembre con una ralentización del consumo dado el aumento de los contagios y nuevos confinamientos (Ortiz y Rodrigo, 2020). No disponemos de datos corrientes.</p>
+<p><em>“Los especialistas en marketing están ansiosos por conocer las causas de la reactancia psicológica y las formas de minimizarla, a raíz de la pandemia de COVID-19”</em> (Akhtar et al., 2020:892) y como se indica en el seguimiento a los datos de la pandemia; <em>“la pandemia ha supuesto un viaje emocional en el que la población ha transitado por diferentes estados anímicos”</em> (TCK, 2020).</p>
+<p><img src="https://drive.google.com/uc?export=view&amp;id=12jXzrOSrxCzvR3RaX87fVpYd30bqR2DO" /></p>
+<div class="footer">
+Fuente: TCK, 2020.
+</div>
+<p>La invisibilidad de la COVID-19 junto con una información en constante cambio, generadora de ansiedad y nerviosismo, y unas restricciones personales han creado situaciones demasiado complejas para muchos individuos. se ha desarrollado ya escalas que miden la ansiedad y la obsesión (Lee, 2020) o el temor hacia el virus (Ahorsu, 2020). Para hacer frente a todo el cambio, muchos de nosotros estamos actuando con aquello que es llamado un cognitive lockdown, es decir un bloqueo de nuestro impulso cognitivo, un intenso deseo de certeza y de información veraz. En el ausencia de esa certeza, nos hemos volcado a realizar actividades y seguido comportamientos más de tiempos pretéritos y que creíamos olvidados en nuestra sociedad (Walpert, 2020): la cocina, nuestros espacios personales de vida (armarios, trasteros), nuestra actividad personal, nuestro microentorno materializado en esos jardines personales que nos han reconectado con la naturaleza, se han convertido en un esfuerzo por recuperar, controlar y calmar nuestros miedos. (Greenbook, 2020).</p>
+<p>Las búsquedas en Internet han mostrado también las preocupaciones de los individuos como seres sociales. Calic (2020) y Walpert (2020) nos indican que esas búsquedas se han centrado en:</p>
+<ul>
+<li>recopilar información y contenido esencial que necesitan para sobrellevar estos momentos,</li>
+<li>descubrir conexiones nuevas y canales de comunicación nuevos que pudieran acompañar,</li>
+<li>adaptarse a los cambios en las rutinas personales,</li>
+<li>elogiar a los héroes cotidianos (sanitarios, repartidores…),</li>
+<li>el cuidado de uno mismo y de los demás.</li>
+</ul>
+<p>Para L’Estrange (2020) el consumidor se ha centrado en este tiempo en:</p>
+<ul>
+<li>una redefinición del espacio en el que vive, se ha acusado mucho más la economía local,</li>
+<li>se ha buscado el placer y la estabilidad emocional en el entorno de nuestras plantas, nuestros jardines, nuestras mascotas, han cambiado nuestro hábitos sanitarios y de salud e higiene personal,</li>
+<li>se han incrementado las compras online y,</li>
+<li>se ha intensificado un enfoque hacia las marcas que han actuado bien</li>
+</ul>
+<p>La realidad es que la pandemia ha cambiado y cambiará el mundo de forma permanente en grandes y pequeños aspectos. Los especialistas en marketing que piensan en sus clientes, deben saber que la generación que llega a la mayoría de edad estará definida por esta pandemia y nuestra sociedad se verá afectada por una pérdida devastadora.</p>
+<p>En diferentes mercados y áreas económicas se han realizado diferentes investigaciones. Desde Jordania, Hashem (2020) ha demostrado que la COVID-19 ha potenciado la tendencia hacia el e-shopping y también ha mostrado un cambio de actitudes hacia el comercio online, pero aun así, la localización forzada del consumo que surge de la presencia de la COVID-19 plantea serias dudas sobre la capacidad de respuesta de las regiones. Desde Austria y Suecia, Vancic y Pärson (2020) indican que hay un cambio en el comportamiento de compra más allá del comportamiento de pánico, ya que la sensibilidad al precio ha aumentado y las percepciones sobre la calidad, en particular sobre la alimentación, han cambiado durante la pandemia. Desde USA, Zwanka y Buff (2020) listan la serie de cambios que han podido analizar en su análisis de cohortes generacionales</p>
+<ul>
+<li>preferencia por el localismo o nacionalismo como seguridad de la cadena de suministro,</li>
+<li>mayor cantidad de pedidos en línea,</li>
+<li>retorno al hedonismo y a la búsqueda de experiencias ante el temor del contagio y muerte,</li>
+<li>cambio en los hábitos de trabajo y en reconocimiento a los trabajadores sociales (sanitarios, cuidadores …)</li>
+<li>descontento político,</li>
+<li>uso de transacciones online antes no disponibles de forma básica (atención médica, enseñanza…)</li>
+<li>la realidad virtual reemplazando a los viajes,</li>
+<li>mayor foco en la administración de lo que nos rodea,</li>
+<li>buscar relaciones seguras,</li>
+<li>cambios en actitud hacia la vida y en las creencias,</li>
+<li>una mayor creencia positiva hacia el bien global más que hacia las libertades individuales.</li>
+</ul>
+<p>También Goff et al. (2020) aprovechan su estudio continuo en USA para medir la diferencia entre la fase prepandémica y la pandémica, concluyendo que existen diferencias importantes en la actitud hacia los gobiernos y los mercados. Beck y Hensher (2020) ha mostrado también como los australianos han modificado sus hábitos de consumo y viaje, con gran resiliencia y adaptabilidad.</p>
+<p>Es por ello que es necesario realizar más investigaciones para comprender mejor estos cambios en el consumo con un examen directo de las percepciones de riesgo de los consumidores junto con otros datos empíricos y realizarse como parte del desarrollo de una comprensión integral basada en la teoría de las implicaciones del desplazamiento del consumo (Hall et al, 2020).</p>
+<p>En lo que respecta a las marcas, durante la pandemia ha existido una mayor sensación de que las empresas tienen una seria responsabilidad social de hacer lo correcto: proteger la seguridad de los empleados y consumidores, salvaguardar los puestos de trabajo, compartir los sacrificios de manera justa con los líderes superiores y responder con esfuerzos de ayuda comunitaria y filantropía (Greenbook 2020). Bajo la atención de los stakeholders, las industrias que están en primera línea para atender nuestras necesidades son las que están recibiendo más críticas. Las tiendas, el comercio minorista, los restaurantes y las farmacias enfrentan una fuerte presión pública para responder a la COVID-19.</p>
+<p>Así pues, comenzar a redefinir los perfiles de sus clientes ahora y seguir ajustando nuestra estrategia de marketing a medida que se obtenga nueva información, se convierte en una obligación y ello nos llevará al orden y la estabilidad en nuestra relación con el cliente. Las soluciones desarrolladas deberán ofrecer al cliente una sensación de seguridad y control en sus vidas y en su relación con las marcas, su marca. (Greenbook 2020).</p>
+<p>Los consumidores ven las marcas como una fuerza para el cambio La respuesta a la crisis actual es un momento decisivo para muchas marcas. La respuesta de una empresa se analiza en las redes sociales. Muchos consumidores esperan que las marcas se apoyen en la crisis.</p>
+<ul>
+<li>El 40% de los consumidores quieren escuchar cómo las marcas están respondiendo al brote - (4A’s op cit. en Greenbook, 2020)</li>
+<li>Incluso después de que regresen las señales de normalidad, los efectos duraderos de COVID en el marketing serán significativos y podrían consagrar el propósito de la marca, que ya estaba ganando terreno prepandémica. (ARF op cit. en Greenbook 2020)</li>
+</ul>
+</div>
+<div id="y-después-qué" class="section level1">
+<h1>Y después, ¿qué?</h1>
+<p>Entonces, la gran pregunta es: ¿qué esperamos después de que el coronavirus desaparezca o esté bajo control mediante la vacunación u otros medios? Los datos, así como las actitudes de las personas, apuntan en la misma dirección (Greenbook, 2020):</p>
+<ul>
+<li>Más personas seguirán trabajando desde casa que antes del COVID-19;</li>
+<li>Se utilizarán más herramientas y aplicaciones de productividad para ayudar a facilitar que las empresas y las personas trabajen desde casa;</li>
+<li>Los servicios de Video on Demand y otros servicios de transmisión continuarán creciendo y deberán cumplir con las nuevas expectativas de sus consumidores;</li>
+<li>La gente hará más llamadas y chats de video con amigos y familiares;</li>
+<li>Se viajará menos;</li>
+<li>El Online Learning seguirá experimentando una mayor demanda y un crecimiento de suscriptores;</li>
+<li>Las aplicaciones y servicios de compras y entregas cambiarán la forma en que compramos comestibles y productos.</li>
+</ul>
+<p>Con toda esta información, la situación trazada nos deja un panorama de estudio muy abierto, en el que desarrollar nuestra investigación. Vemos necesario abordar con un estudio que nos muestre claramente que ha sucedido en nuestro entorno de primera mano, intentando comprender y dar respuesta a las siguientes cuestiones:</p>
+<ul>
+<li>¿Cómo nos ha afectado la COVID-19 desde el punto de vista psicológico?</li>
+<li>¿Cambiaremos nuestra forma de relacionarnos como sociedad?</li>
+<li>¿Cambiará nuestra estabilidad emocional con repercusión por tanto en nuestra forma de consumir?</li>
+<li>¿Cambiarán nuestros patrones de conducta?</li>
+<li>¿Compraremos menos cantidad más veces?</li>
+<li>¿Compraremos más cantidad menos veces?</li>
+<li>¿Serán permanentes estos cambios o se volverá a la situación anterior a la pandemia?</li>
+<li>¿Cómo se ha actuado desde los diferentes stakeholders del mercado?</li>
+</ul>
+<p>Todos estos acontecimientos vividos, influyen en nuestro comportamiento de compra e influirán en nuestros patrones de consumo futuros. Como indica Kim (2020), la pandemia obligó a que el trabajo fuera virtualizado, y muchas empresas han realizado dicha transición con éxito en un corto período de tiempo, pero la investigación futura debería explorar los impactos de la expansión del comercio electrónico en el lanzamiento de nuevos productos, el desarrollo de productos, la gestión de productos y / o los precios y también los cambios en la experiencia de usuario.</p>
+<p>Para Sheth (2020), el bloqueo y el distanciamiento social ha generado importantes alteraciones en el comportamiento del consumidor. Los límites entre el trabajo y la vida ahora se difuminan a medida que la gente trabaja en casa, estudia en casa y se relaja en casa. Dado que el consumidor no puede ir a la tienda, la tienda tiene que ir al consumidor; es probable que se adopten nuevas tecnologías que faciliten el trabajo, el estudio y el consumo de una manera más conveniente y todo ello impondrá nuevos hábitos de consumo, especialmente en lugares públicos como aeropuertos, conciertos y parques públicos.</p>
+</div>
+<div id="bibliografía" class="section level1">
+<h1>Bibliografía</h1>
+<hr />
+<p>AHORSU, Daniel Kwasi, et al. The fear of COVID-19 scale: development and initial validation. International journal of mental health and addiction, 2020.</p>
+<p>AKHTAR, Naeem, et al. COVID-19 restrictions and consumers’ psychological reactance toward offline shopping freedom restoration. The Service Industries Journal, 2020, vol. 40, no 13-14, p. 891-913.</p>
+<p>ARELLANO, A., CÁMARA, N. BBVA RESEARCH - COVID-19, test de estrés para las finanzas de los hogares. Artículo en El País, 18 de mayo de 2020.</p>
+<p>BARREIRO, David. El consumo después de la covid-19: un universo de incertidumbre. Eurocarne: La revista internacional del sector cárnico, 2020, no 287, p. 17-31.</p>
+<p>BECK, Matthew J.; HENSHER, David A. Insights into the Impact of Covid-19 on Household Travel, Working, Activities And Shopping in Australia–the early days under Restrictions. 2020.</p>
+<p>CALIC, J. Las búsquedas revelan cómo las marcas y organizaciones pueden ayudar durante la pandemia del coronavirus, Think with Google, 2020.</p>
+<p>CARDOSO, M. BBVA RESEARCH - Consumo: caída sin precedentes y heterogénea en Cataluña. Artículo en La Vanguardia, 5 de junio de 2020.</p>
+<p>GOFF, Sandra, et al. The Effect of the COVID-19 Pandemic on Government-and Market-Attitudes. 2020.</p>
+<p>GREENBOOK. Forces of change. GREENBOOK.org, 2020.</p>
+<p>HALL, Michael C., et al. Beyond panic buying: consumption displacement and COVID-19. Journal of Service Management, 2020.</p>
+<p>HASHEM, Tareq N. Examining the Influence of COVID 19 Pandemic in Changing Customers’ Orientation towards E-Shopping. Modern Applied Science, 2020, vol. 14, no 8.</p>
+<p>KIM, Rae Yule. The Impact of COVID-19 on Consumers: Preparing for Digital Sales. IEEE Engineering Management Review, 2020.</p>
+<p>LEE, Sherman A. Coronavirus Anxiety Scale: A brief mental health screener for COVID-19 related anxiety. Death studies, 2020, vol. 44, no 7, p. 393-401.</p>
+<p>L’ESTRANGE, J. 6 lockdown consumer trends that will be here for the long term, Think with Google, 2020.</p>
+<p>ORTIZ, A.; RODRIGO, T.. BBVA RESEARCH - La COVID-19, luces y sombras en el consumo. Artículo en EXPANSION, 13 de octubre de 2020.</p>
+<p>RODRIGO, T. BBVA RESEARCH - The COVID-19 economic impact in Real Time and High Definition. conferencia en Cotec - Big Data for Social Good, 2020.</p>
+<p>SHETH, Jagdish. Impact of Covid-19 on Consumer Behavior: Will the Old Habits Return or Die?. Journal of Business Research, 2020.</p>
+<p>TCK. EL PRINCIPIO DE LA NUEVA NORMALIDAD, El estado emocional y los nuevos hábitos de los españoles. The Cocktail Analysis, 2020.</p>
+<p>TCK. El salto digital en tiempos de Coronavirus. The Cocktail Analysis, 2020.</p>
+<p>TCK. LA DESESCALADA EMOCIONAL. El estado emocional y los nuevos hábitos de los españoles en el proceso de desescalada. The Cocktail Analysis, 2020.</p>
+<p>TCK. La fragmentación de la vivencia COVID. The Cocktail Analysis, 2020.</p>
+<p>VANCIC, Alexandra; PÄRSON, Gustav Filip Arne. Changed Buying Behavior in the COVID-19 pandemic: the influence of Price Sensitivity and Perceived Quality. 2020.</p>
+<p>WALPERT-LEVY, T. Consumidores y marcas ¿cómo nos ayudamos en tiempos de Covid?, Think with Google, 2020.</p>
+<p>ZWANKA, Russell J.; BUFF, Cheryl. COVID-19 Generation: A Conceptual Framework of the Consumer Behavioral Shifts to Be Caused by the COVID-19 Pandemic. Journal of International Consumer Marketing, 2020, p. 1-10.</p>
+</div>
+
+<br>
+<hr>
+<div style="text-align: center;">All rights reserved - 2008-2020 (c) - InvestigaOnline.com</div>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
