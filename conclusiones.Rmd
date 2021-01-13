@@ -4,6 +4,8 @@ title: 'Conclusiones del estudio'
 
 # Generales
 
+Tras analizar los resultados alcanzados en la primera oleada de este trabajo de investigación, creemos necesario resaltar que:
+
 * ...
 * ...
 
@@ -28,6 +30,8 @@ title: 'Conclusiones del estudio'
 * ...
 
 # Recomendaciones
+
+Por último, quepan estas recomendaciones de acción a las empresas que afrontarán 
 
 * ...
 * ...
