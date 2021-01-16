@@ -7,7 +7,7 @@ title: 'Objetivo 1'
 Vamos a comenzar a preguntarte sobre tu actitud frente a la pandemia COVID-19, y como han variado tus hábitos de comportamiento, consumo y compra de productos de alimentación y/o higiene del hogar. ¿Has notado un cambio en tus hábitos en el consumo de ese tipo de productos en estos últimos meses?
 
 ```{r echo = FALSE}
-tab <- data.total %>%
+tab <- data %>%
 	tab_cells(Q00010) %>%
 	tab_stat_cpct(label='%casos', total_row_position='none') %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
