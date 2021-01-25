@@ -1,8 +1,0 @@
-"0","highchart() %>%"
-"0","  hc_chart(type = ""solidgauge"") %>%"
-"0","  hc_pane(startAngle = -90,endAngle = 90,background = list(outerRadius = '100%',innerRadius = '60%',shape = ""arc"" )) %>%"
-"0","  hc_tooltip(enabled = FALSE) %>%"
-"0","  hc_yAxis(stops = stops,lineWidth = 0,minorTickWidth = 0,tickAmount = 2,min = 0,max = 10,labels = list(y = 25)) %>%"
-"0","  hc_add_series(data = round(mean(data$Q00221, na.rm=TRUE),1),dataLabels = list(borderWidth = 0,useHTML = TRUE,style = list(fontSize = ""60px""))) %>%"
-"0","  hc_credits(enabled=TRUE, text='InvestigaOnline.com', href ='https://www.investigaonline.com') %>%"
-"0","  hc_exporting(enabled=TRUE)"

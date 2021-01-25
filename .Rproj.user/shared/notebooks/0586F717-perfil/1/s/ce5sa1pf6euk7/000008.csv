@@ -1,7 +1,0 @@
-"0","tab <- data %>%"
-"0","	tab_cells(STEP12) %>%"
-"0","	tab_stat_cpct(label='%casos') %>%"
-"0","	tab_stat_cases(label='casos') %>%"
-"0","	tab_pivot(stat_position = 'inside_columns') %>%"
-"0","	tab_caption(paste('Perfil:','STATUS HOGAR', sep = ''))"
-"0","as.datatable_widget(tab)"

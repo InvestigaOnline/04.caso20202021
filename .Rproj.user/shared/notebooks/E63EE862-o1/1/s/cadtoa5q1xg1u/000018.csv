@@ -1,9 +1,0 @@
-"0","tab <- data %>%"
-"0","	tab_cells(Q00011) %>%"
-"0","	tab_stat_cpct(label='%casos') %>%"
-"0","	tab_stat_cases(label='casos') %>%"
-"0","	tab_pivot(stat_position = 'inside_columns') %>%"
-"0","	tab_caption(paste('Objetivo 1: ',var_lab(data$Q00011), sep = ''))"
-"2","Error in data %>% tab_cells(Q00011) %>% tab_stat_cpct(label = ""%casos"") %>%  : 
-  no se pudo encontrar la función ""%>%""
-"

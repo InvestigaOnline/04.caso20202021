@@ -1,5 +1,0 @@
-"0","word = tolower(tab$row_labels)"
-"0","freq = tab$`#Total|casos`"
-"0","dataword <- data.frame(word, freq)"
-"0","dataword <- na.omit(dataword)"
-"0","wordcloud(words = dataword$word,freq = dataword$freq,min.freq = 1,max.words = 1000,random.order = TRUE,rot.per = 0.10,colors = brewer.pal(12, ""Paired""))"

@@ -1,7 +1,0 @@
-"0","tab2 <- data %>%"
-"0","	tab_cells(mrset_f(Q00360_)) %>%"
-"0","	tab_stat_cases(label='casos', total_row_position = 'none') %>%"
-"0","	tab_stat_cpct(label='%casos', total_row_position = 'none') %>%"
-"0","	tab_pivot(stat_position = 'inside_columns') %>%"
-"0","	tab_caption(paste('Objetivo 3: ',var_lab(data$Q00360_1) ,sep = ''))"
-"0","as.datatable_widget(tab2)"

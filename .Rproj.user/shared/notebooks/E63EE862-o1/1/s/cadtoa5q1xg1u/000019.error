@@ -1,1 +1,0 @@
-{"frames":[],"message":"Error in data %>% tab_cells(Q00011) %>% tab_stat_cpct(label = \"%casos\") %>%  : \n  no se pudo encontrar la función \"%>%\"\n"}
