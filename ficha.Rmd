@@ -37,7 +37,7 @@ ficha <-
             '<a href="https://www.tesigandia.com/gandia-integra/">Integra</a>, un producto de <a href="https://www.tesigandia.com">TESI, SL</a>',
             'R, por <a href="https://www.investigaonline.com">InvestigaOnline.com</a>',
             paste(round(respuesta,1), ' %', sep= ''),
-            'Alumnos de ... <br><li>Universitat Católica de Valencia (ADE - Plan de Marketing)</li><li>Universitat de València (Máster en Marketing e Investigación de Mercados - Gestión de Proyectos de Investigación Comercial)</li>'))
+            'Alumnos de ... <br><li>Universitat Católica de Valencia (ADE - Plan de Marketing, GECOFIN - Técnicas de Planificación Comercial)</li><li>Universitat de València (Máster en Marketing e Investigación de Mercados - Gestión de Proyectos de Investigación Comercial)</li>'))
 kbl(ficha, escape=FALSE) %>% 
      kable_styling(bootstrap_options = c("striped", "hover", 'condensed'), full_width = F)
 ```
