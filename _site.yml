@@ -36,6 +36,8 @@ navbar:
         href: otros04.html
       - text: "Verbatim"
         href: verbatim.html
+      - text: "Cuestionario"
+        href: qst.html
     - text: "Conclusiones"
       href: conclusiones.html
   right:
