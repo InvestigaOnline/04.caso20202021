@@ -26,7 +26,7 @@ Aquí mostramos los resultados de este análisis.
 
 ## Escala de ansiedad
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 options(width=9999)
 
 alpha(select(data,Q00110_1, Q00110_2, Q00110_3, Q00110_4, Q00110_5))
@@ -34,13 +34,13 @@ alpha(select(data,Q00110_1, Q00110_2, Q00110_3, Q00110_4, Q00110_5))
 
 ## Escala de temor
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 alpha(select(data,Q00120_1, Q00120_2, Q00120_3, Q00120_4))
 ```
 
 ## Escala de obsesión
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 alpha(select(data,Q00130_1, Q00130_2, Q00130_3, Q00130_4, Q00130_5, Q00130_6, Q00130_7))
 ```
 

@@ -4,7 +4,7 @@ title: 'Otros análisis (Objetivo 4)'
 
 # Tablas - Sexo
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 tab <- data %>%
      tab_prepend_names() %>% 
      tab_cols(total(),DC02) %>% 
@@ -21,7 +21,7 @@ as.datatable_widget(tab, width=900)
 
 # Tablas - Edad
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 tab <- data %>%
      tab_prepend_names() %>% 
      tab_cols(total(),DC01QT) %>% 
@@ -38,7 +38,7 @@ as.datatable_widget(tab, width=900)
 
 # Tablas - NSCE
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 tab <- data %>%
      tab_prepend_names() %>% 
      tab_cols(total(),STEP12) %>% 

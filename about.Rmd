@@ -2,12 +2,12 @@
 title: 'Acerca de ...'
 ---
 
-```{r echo = FALSE}
-knitr::opts_chunk$set(echo = FALSE, comment = NA)
+```{r echo = TRUE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
 ```
 
 
-```{r echo = FALSE}
+```{r echo = TRUE}
 suppressMessages(library(dplyr,quietly =TRUE))
 suppressMessages(library(stringr,quietly =TRUE))
 suppressMessages(library(expss,quietly =TRUE))
