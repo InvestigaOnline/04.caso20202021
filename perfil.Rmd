@@ -9,7 +9,7 @@ Recordemos que finalmente la muestra ha sido obtenida por medio de grupos de wha
 
 La distribución por edades de los entrevistados ha sido la siguiente:
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(DC01QT) %>%
 	tab_stat_cpct(label='%casos') %>%
@@ -19,7 +19,7 @@ tab <- data %>%
 as.datatable_widget(tab)
 ```
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 df <- data %>%
 	tab_cells('|'=unvr(DC01QT)) %>%
 	tab_stat_cpct(label='%casos', total_row_position = 'none') %>%
@@ -38,7 +38,7 @@ highchart() %>%
 
 Mientras que la distribución por sexos ha sido:
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(DC02) %>%
 	tab_stat_cpct(label='%casos') %>%
@@ -48,7 +48,7 @@ tab <- data %>%
 as.datatable_widget(tab)
 ```
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 df <- data %>%
 	tab_cells('|'=unvr(DC02)) %>%
 	tab_stat_cpct(label='%casos', total_row_position = 'none') %>%
@@ -66,7 +66,7 @@ highchart() %>%
 
 Por último, se ha realizado a partir de los datos obtenidos del entrevistado sobre si era o no el mayor sustentador del hogar una imputación del nivel socio económico del hogar de residencia del entrevistado, con las siguiente distribución resultante:
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(STEP12) %>%
 	tab_stat_cpct(label='%casos') %>%
@@ -78,7 +78,7 @@ as.datatable_widget(tab)
 
 Las preguntas del final del cuestionario pretendían estimar el volumen de ingresos de la unidad familiar donde reside o de donde depende el individuo entrevistado. Así, siguiendo los cálculos de la AIMC utilizados en el EGM español, los resultados se pueden ver en este gráfico.
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 df <- data %>%
 	tab_cells('|'=unvr(STEP12)) %>%
 	tab_stat_cpct(label='%casos', total_row_position = 'none') %>%

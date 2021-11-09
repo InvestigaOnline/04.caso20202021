@@ -6,7 +6,7 @@ title: 'Objetivo 1'
 
 Vamos a comenzar a preguntarte sobre tu actitud frente a la pandemia COVID-19, y como han variado tus hábitos de comportamiento, consumo y compra de productos de alimentación y/o higiene del hogar. ¿Has notado un cambio en tus hábitos en el consumo de ese tipo de productos en estos últimos meses?
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00010) %>%
 	tab_stat_cpct(label='%casos', total_row_position='none') %>%
@@ -26,7 +26,7 @@ highchart() %>%
 
 Y en lo que respecta a tu forma de realizar sus compras, ¿has notado algún cambio?
 	
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00011) %>%
 	tab_stat_cpct(label='%casos', total_row_position='none') %>%
@@ -46,7 +46,7 @@ highchart() %>%
 
 En el entorno más cercano de familia y/o amigos, ¿ha existido algún caso de contagio por la COVID-19?
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00012) %>%
 	tab_stat_cpct(label='%casos', total_row_position='none') %>%
@@ -72,7 +72,7 @@ Una de las primeras consecuencias de la COVID-19 en nosotros, es que afecta a nu
 
 # Escala de ansiedad
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 val_lab(data$Q00110_1) <- c('total desacuerdo'=1, 'en desacuerdo'=2, 'ni acuerdo, ni desacuerdo'=3, 'de acuerdo'=4, 'total acuerdo'=5)
 val_lab(data$Q00110_2) <- c('total desacuerdo'=1, 'en desacuerdo'=2, 'ni acuerdo, ni desacuerdo'=3, 'de acuerdo'=4, 'total acuerdo'=5)
 val_lab(data$Q00110_3) <- c('total desacuerdo'=1, 'en desacuerdo'=2, 'ni acuerdo, ni desacuerdo'=3, 'de acuerdo'=4, 'total acuerdo'=5)
@@ -125,7 +125,7 @@ Del mismo modo, indica si estás de acuerdo con las siguientes afirmaciones usan
 
 # Escala de temor
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 
 val_lab(data$Q00120_1) <- c('total desacuerdo'=1, 'en desacuerdo'=2, 'ni acuerdo, ni desacuerdo'=3, 'de acuerdo'=4, 'total acuerdo'=5)
 val_lab(data$Q00120_2) <- c('total desacuerdo'=1, 'en desacuerdo'=2, 'ni acuerdo, ni desacuerdo'=3, 'de acuerdo'=4, 'total acuerdo'=5)
@@ -176,7 +176,7 @@ Por último, las siguientes afirmaciones usando la misma escala en la que 1 muy 
 
 # Escala de obsesión
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 val_lab(data$Q00130_1) <- c('total desacuerdo'=1, 'en desacuerdo'=2, 'ni acuerdo, ni desacuerdo'=3, 'de acuerdo'=4, 'total acuerdo'=5)
 val_lab(data$Q00130_2) <- c('total desacuerdo'=1, 'en desacuerdo'=2, 'ni acuerdo, ni desacuerdo'=3, 'de acuerdo'=4, 'total acuerdo'=5)
 val_lab(data$Q00130_3) <- c('total desacuerdo'=1, 'en desacuerdo'=2, 'ni acuerdo, ni desacuerdo'=3, 'de acuerdo'=4, 'total acuerdo'=5)
@@ -235,7 +235,7 @@ highchart() %>%
 
 Del mismo modo, se pedía al entrevistado seleccionar los tres estados que _"mejor describan tu estado de ánimo actual"_. Existía un límite de tres menciones posibles.
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 data$W1 <- tolower(data$W1)
 data$W2 <- tolower(data$W2)
 data$W3 <- tolower(data$W3)
@@ -263,7 +263,7 @@ wordcloud(words = dataword$word,freq = dataword$freq,min.freq = 1,max.words = 10
 
 Otra cuestión fue valorar la creencia de que este período incidiría en modo alguno en la vida del entrevistado y su evolución en el futuro.
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00150) %>%
 	tab_stat_cpct(label='%casos', total_row_position='none') %>%
@@ -283,7 +283,7 @@ highchart() %>%
 
 Así como con el impacto que este período tendría en nuestras relaciones en la sociedad.
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00160) %>%
 	tab_stat_cpct(label='%casos', total_row_position='none') %>%
@@ -303,7 +303,7 @@ highchart() %>%
 
 Se pidió también una valoración sobre el grado de preocupación con respecto a la posibilidad de estar expuesto al coronavirus.
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00170) %>%
 	tab_stat_cpct(label='%casos', total_row_position='none') %>%

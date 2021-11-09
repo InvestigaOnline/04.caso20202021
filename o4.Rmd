@@ -7,7 +7,7 @@ title: 'Objetivo 4'
 Enumera las 3 primeras marcas que te vienen a la mente, y que más te han impresionado por sus actividades durante la pandemia de la COVID-19.
 
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 #data$BRAND1 <- tolower(data$BRAND1)
 #data$BRAND2 <- tolower(data$BRAND2)
 #data$BRAND3 <- tolower(data$BRAND3)
@@ -32,7 +32,7 @@ Enumera las 3 primeras marcas que te vienen a la mente, y que más te han impres
 ```
 
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 data$Q00410_1 <- recode(data$Q00410_1, 1:3 ~ NA, TRUE ~ copy, with_labels = TRUE)
 data$Q00410_2 <- recode(data$Q00410_2, 1:3 ~ NA, TRUE ~ copy, with_labels = TRUE)
 data$Q00410_3 <- recode(data$Q00410_3, 1:3 ~ NA, TRUE ~ copy, with_labels = TRUE)
@@ -54,7 +54,7 @@ wordcloud(words = dataword$word,freq = dataword$freq,min.freq = 1,max.words = 10
 
 ¿Cómo valoras la reacción y gestión de la pandemia de las siguientes organizaciones? Utiliza una escala de 1 a 10, donde 1 es muy mala gestión y 10 muy buena gestión.
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab0 <- data %>%
         tab_cells('|'=unvr(Q00420_1)) %>% 
         tab_stat_cpct(label=var_lab(Q00420_1), total_row_position='below') %>%
@@ -105,7 +105,7 @@ highchart() %>%
 
 ¿Cómo valoras la reacción y la gestión de la pandemia de cada uno de los siguientes tipos de empresas y sectores? Utiliza de nuevo una escala de 1 a 10, donde 1 es muy mala gestión y 10 muy buena gestión.
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab0 <- data %>%
         tab_cells('|'=unvr(Q00430_1)) %>% 
         tab_stat_cpct(label=var_lab(Q00430_1), total_row_position='below') %>%

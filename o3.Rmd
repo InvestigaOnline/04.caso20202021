@@ -6,7 +6,7 @@ title: 'Objetivo 3'
 
 Cuando todo regrese a la normalidad, ¿en cuántas tiendas crees que comprarás (en persona u online) productos de alimentación e higiene doméstica?
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells('|'=unvr(Q00311)) %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
@@ -26,7 +26,7 @@ highchart() %>%
 
 Y crees que realizarás ...
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells('|'=unvr(Q00312)) %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
@@ -46,7 +46,7 @@ highchart() %>%
 
 Y en cuento al gasto ...
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells('|'=unvr(Q00313)) %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
@@ -66,7 +66,7 @@ highchart() %>%
 
 Como sabemos todos, se cree que en los próximos meses dispondremos de una vacuna para combatir el coronavirus. En este nuevo escenario, ¿crees que todo volverá a la normalidad anterior a la pandemia?
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells('|'=unvr(Q00320)) %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
@@ -86,7 +86,7 @@ highchart() %>%
 
 En general, y en una escala de 1 a 10, donde el 1 es nada seguro y el 10 es muy seguro, ¿cual sería tu valoración del escenario futuro con la convivencia de la COVID-19 y la vacuna en tu entorno más próximo de consumo (tu ciudad, barrio, pueblo, núcleo más cercano)?
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells('|'=unvr(Q00330)) %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
@@ -113,7 +113,7 @@ highchart() %>%
 
 ¿Cuánto tiempo crees que necesitarás para volver a sentirte seguro comprando en las tiendas productos de alimentación e higiene doméstica como antes de la COVID -19?
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00340) %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
@@ -133,7 +133,7 @@ highchart() %>%
 
 En el futuro, a la hora de comprar productos de alimentación e higiene doméstica, ¿hasta qué punto crees que va a ser más o menos importante que antes de la COVID-19 cada uno de los siguientes factores?, utiliza una escala de 1 10, donde 1 es poca o ninguna importancia y 10 es mucha importancia.
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab0 <- data %>%
         tab_cells('|'=unvr(Q00350_1)) %>% 
         tab_stat_cpct(label=var_lab(Q00350_1), total_row_position='below') %>%
@@ -178,7 +178,7 @@ highchart() %>%
 
 Top: primer lugar
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab1 <- data %>%
 	tab_cells(Q00360_1) %>%
 	tab_stat_cases(label='casos', total_row_position = 'none') %>%
@@ -198,7 +198,7 @@ highchart() %>%
 
 Total
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab2 <- data %>%
 	tab_cells(mrset_f(Q00360_)) %>%
 	tab_stat_cases(label='casos', total_row_position = 'none') %>%
@@ -219,7 +219,7 @@ highchart() %>%
 
 Tras la COVID-19, si no te sientes cómodo comprando en tus tiendas habituales, ¿qué harás?
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 tab <- data %>%
 	tab_cells(Q00370) %>%
 	tab_stat_cases(label='casos', total_row_position='none') %>%
@@ -237,7 +237,7 @@ highchart() %>%
     hc_exporting(enabled=TRUE)
 ```
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 #En comparación con los 12 meses anteriores al inicio de la COVID-19 cree que harás más, igual o menos que antes, cada una de las siguientes actividades que te vamos a citar:
 #tab0 <- data %>%
 #        tab_cells('|'=unvr(Q00380_1)) %>% 

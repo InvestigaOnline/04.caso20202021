@@ -1,13 +1,30 @@
 {
     "dialog-state": {
-        "query": "cronbach",
-        "path": "~/R/r-data",
+        "query": "{r echo = TRUE}",
+        "path": "",
         "regex": false,
         "caseSensitive": false,
-        "filePatterns": [],
+        "wholeWord": false,
+        "filePatterns": [
+            "*.r",
+            "*.R",
+            "*.rnw",
+            "*.Rnw",
+            "*.rmd",
+            "*.Rmd",
+            "*.rmarkdown",
+            "*.Rmarkdown",
+            "*.rhtml",
+            "*.Rhtml",
+            "*.h",
+            "*.hpp",
+            "*.c",
+            "*.cpp"
+        ],
         "excludeFilePatterns": [],
-        "resultsCount": 0,
+        "resultsCount": 70,
         "errorCount": 0,
-        "replaceErrors": ""
+        "replaceErrors": "",
+        "projectRelative": true
     }
 }

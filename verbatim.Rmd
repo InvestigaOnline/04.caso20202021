@@ -41,7 +41,7 @@ kbl(data) %>%
 
 > Pregunta Q00231
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 data <- suppressMessages(read_delim("LC_Datos_IO2020CV19_Q00231.csv", "\t", 
                                              escape_double = FALSE, 
                                              locale = locale(encoding = "WINDOWS-1252"),
@@ -59,7 +59,7 @@ kbl(data) %>%
 
 > Pregunta Q00232
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 data <- suppressMessages(read_delim("LC_Datos_IO2020CV19_Q00232.csv", "\t", 
                                              escape_double = FALSE, 
                                              locale = locale(encoding = "WINDOWS-1252"),

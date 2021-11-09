@@ -2,12 +2,12 @@
 title: 'Acerca de ...'
 ---
 
-```{r echo = TRUE}
-knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```{r echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, comment = NA)
 ```
 
 
-```{r echo = TRUE}
+```{r echo = FALSE}
 suppressMessages(library(dplyr,quietly =TRUE))
 suppressMessages(library(stringr,quietly =TRUE))
 suppressMessages(library(expss,quietly =TRUE))
@@ -19,7 +19,7 @@ suppressMessages(library(readr,quietly =TRUE))
 
 set.seed(311265)
 
-data.total <- suppressMessages(read_spss('~/R/r-data/04.caso20202021/Datos_IO2020CV19.sav'))
+data.total <- suppressMessages(read_spss('~/R/r-projects/04.caso20202021-1/Datos_IO2020CV19.sav'))
 data.total <- filter(data.total, DURACION > 0)
 data <- data.total %>%  where(ESTADO == 1)
 participantes <- nrow(data.total)

@@ -13,8 +13,8 @@
 
 <title>Acerca de …</title>
 
-<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -319,14 +319,14 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="about.html">
-    <span class="fas fa-question-circle"></span>
+    <span class="fa fa-question-circle"></span>
      
     Acerca de ...
   </a>
 </li>
 <li>
   <a href="https://www.investigaonline.com">
-    <span class="fas fa-search-plus"></span>
+    <span class="fa fa-search-plus"></span>
      
     InvestigaOnline.com
   </a>
@@ -345,31 +345,425 @@ $(document).ready(function () {
 </div>
 
 
-<pre class="r"><code>knitr::opts_chunk$set(echo = TRUE, comment = NA)</code></pre>
-<pre class="r"><code>suppressMessages(library(dplyr,quietly =TRUE))
-suppressMessages(library(stringr,quietly =TRUE))
-suppressMessages(library(expss,quietly =TRUE))
-suppressMessages(library(highcharter,quietly =TRUE))</code></pre>
-<pre><code>Warning: package &#39;highcharter&#39; was built under R version 4.0.4</code></pre>
-<pre class="r"><code>suppressMessages(library(kableExtra,quietly =TRUE))</code></pre>
-<pre><code>Warning: package &#39;kableExtra&#39; was built under R version 4.0.4</code></pre>
-<pre class="r"><code>suppressMessages(library(psych,quietly =TRUE))
-suppressMessages(library(wordcloud,quietly =TRUE))
-suppressMessages(library(readr,quietly =TRUE))
+<pre><code>Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
 
-set.seed(311265)
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
 
-data.total &lt;- suppressMessages(read_spss(&#39;~/R/r-data/04.caso20202021/Datos_IO2020CV19.sav&#39;))
-data.total &lt;- filter(data.total, DURACION &gt; 0)
-data &lt;- data.total %&gt;%  where(ESTADO == 1)
-participantes &lt;- nrow(data.total)
-nointer &lt;- nrow(data.total %&gt;%  where(DURACION == 0))
-parciales &lt;- nrow(data.total %&gt;%  where(!ESTADO == 1 &amp; DURACION &gt; 0 ))
-finalizadas &lt;- nrow(data.total %&gt;%  where(ESTADO == 1))
-respuesta &lt;- (finalizadas / participantes) * 100
-col_stops &lt;-data.frame(q = c(0.25, 0.50, 0.75),c = c(&#39;#CD5C5C&#39;, &#39;#F0E68C&#39;, &#39;#3CB371&#39;),stringsAsFactors = FALSE)
-stops &lt;- list_parse2(col_stops)
-options(highcharter.theme = hc_theme_economist(tooltip = list(valueDecimals = 1)))</code></pre>
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE
+
+Warning in type.convert.default(val_labs, numerals = &quot;no.loss&quot;): &#39;as.is&#39; should
+be specified by the caller; using TRUE</code></pre>
 <div id="quiénes-somos" class="section level1">
 <h1>¿Quiénes somos?</h1>
 <p><span style="class= &#39;centrado&#39; width: 100%; "><img src="https://drive.google.com/uc?export=view&amp;id=1RuRVvr4CNzrJZrXlOWBmzPuTUaS-vir1" /></span></p>
