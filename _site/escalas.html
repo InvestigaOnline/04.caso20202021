@@ -13,7 +13,7 @@
 
 <title>Fiabilidad de escalas</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -61,6 +61,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -85,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -237,7 +241,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -250,7 +254,7 @@ $(document).ready(function () {
   <a href="index.html">Introducción</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Preliminares
      
     <span class="caret"></span>
@@ -271,7 +275,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Resultados
      
     <span class="caret"></span>
@@ -347,17 +351,77 @@ $(document).ready(function () {
 
 <div id="introducción" class="section level1">
 <h1>Introducción</h1>
-<p>Para analizar la consistencia de las escalas utilizadas, realizamos un análisis de fiabilidad basa en el cálculo del Alfa de Cronbach. Para cada escala, se nos devuelve el valor del coeficiente Alfa de Cronbach, así como otros estadísticos que describimos seguidamente.</p>
+<p>Para analizar la consistencia de las escalas utilizadas, realizamos
+un análisis de fiabilidad basa en el cálculo del Alfa de Cronbach. Para
+cada escala, se nos devuelve el valor del coeficiente Alfa de Cronbach,
+así como otros estadísticos que describimos seguidamente.</p>
 <ul>
-<li><p><em>raw_alpha</em>: coeficiente alfa con las puntuaciones observadas. Esta es el valor de Alfa generalmente usado para evaluar la fiabilidad de una escala. Es también el que se reporta en publicaciones y reportes técnicos. El valor de Alfa puede asumir valores entre 0 y 1. Valores cercanos a 1 son mejores, pues indican mayor consistencia interna. Por convención y para fines prácticos, valores de alfa iguales o mayores a 0.7 se consideran aceptables, mayores a 0.8 son buenos, y mayores a 0.9 son excelentes.Valores por debajo de 0.5 y cercanos a 0 indican que una escala tiene una pobre confiabilidad.</p></li>
-<li><p><em>std.alpha</em>: coeficiente alfa con las puntuaciones estandarizadas. Este valor se obtiene estandarizando las puntuaciones de la escala antes de calcular alfa. Es útil cuando nuestros ítemes no tienen el mismo rango de valores posibles, pues así evitamos sesgar los resultados. Por lo general, obtenemos valores que son poco diferentes a los obtenidos con las puntuaciones observadas.</p></li>
-<li><p><em>G6(smc), Lambda 6 de Guttman (λ6)</em>: otra medida de confiabilidad, obtenida a partir del coeficiente de determinación de cada ítem con respecto a todos los demás, es decir, de correlaciones múltiples al cuadrado. Lambda 6 tiende a ser menos sensible al número de ítems en la escala. Al igual que Alfa, asume valores de 0 a 1 y para fines prácticos lo interpretamos de la misma manera.</p></li>
-<li><p><em>average_r</em>: correlación promedio entre los ítemes. Es el valor promedio de correlación entre los ítem. Cuanto más cercano sea este valor a 1, los ítems han tenido más asociación entre ellos. Este resultado nos ilustra que es posible obtener valores altos de Alfa, aunque los reactivos no tengan correlaciones fuertes entre ellos. Por lo tanto, no podemos asumir que tenemos ítems con una fuerte asociación entre ellos únicamente a partir del valor de Alfa, necesitamos explorar estos resultados primero.</p></li>
-<li><p><em>95% confidence boundaries</em>: es el intervalo de confianza al 95% del valor de Alfa calculado. Se nos muestra el valor del límite inferior (lower) y superior (upper) del intervalo. Intervalos amplios nos indican que el valor de Alfa tiene un mayor error de medida, por lo que debemos ser cuidadosos en las interpretaciones que hagamos y las decisiones que tomemos.</p></li>
-<li><p><em>Reliability if an item is dropped</em>: medida de confiabilidad si un ítem es quitado). Esta tabla nos muestra cómo cambiaría Alfa y los demás indicadores de confiabilidad si un ítem se quita de la escala analizada. Habrá casos en los que Alfa mejora al quitar un ítem. La decisión de efectivamente quitar un ítem depende de que tanto mejora la confiabilidad y en qué medida se afecta la validez de la escala. Este puede convertirse en un proceso iterativo, en el que después de quitar ítems, volvemos a calcular el Alfa de Cronbach, y nos encontramos que aún puede mejorar nuestra confiabilidad quitando un ítem distinto. Es necesario considerar las características particulares de cada escala para encontrar un balance entre ganancias o perdidas en confiabilidad y la integridad de la escala. También es necesario tomar en cuenta los demás resultados reportados en este análisis con respecto a cada ítem.</p></li>
-<li><p><em>Non missing response frequency for each item</em>: medida de frecuencia de respuesta no perdida para cada ítem; proporción de respuesta para cada opción posible para cada uno de los ítemes, incluidas las respuestas perdidas. Esta información es útil para el análisis de resultados inusuales.</p></li>
+<li><p><em>raw_alpha</em>: coeficiente alfa con las puntuaciones
+observadas. Esta es el valor de Alfa generalmente usado para evaluar la
+fiabilidad de una escala. Es también el que se reporta en publicaciones
+y reportes técnicos. El valor de Alfa puede asumir valores entre 0 y 1.
+Valores cercanos a 1 son mejores, pues indican mayor consistencia
+interna. Por convención y para fines prácticos, valores de alfa iguales
+o mayores a 0.7 se consideran aceptables, mayores a 0.8 son buenos, y
+mayores a 0.9 son excelentes.Valores por debajo de 0.5 y cercanos a 0
+indican que una escala tiene una pobre confiabilidad.</p></li>
+<li><p><em>std.alpha</em>: coeficiente alfa con las puntuaciones
+estandarizadas. Este valor se obtiene estandarizando las puntuaciones de
+la escala antes de calcular alfa. Es útil cuando nuestros ítemes no
+tienen el mismo rango de valores posibles, pues así evitamos sesgar los
+resultados. Por lo general, obtenemos valores que son poco diferentes a
+los obtenidos con las puntuaciones observadas.</p></li>
+<li><p><em>G6(smc), Lambda 6 de Guttman (λ6)</em>: otra medida de
+confiabilidad, obtenida a partir del coeficiente de determinación de
+cada ítem con respecto a todos los demás, es decir, de correlaciones
+múltiples al cuadrado. Lambda 6 tiende a ser menos sensible al número de
+ítems en la escala. Al igual que Alfa, asume valores de 0 a 1 y para
+fines prácticos lo interpretamos de la misma manera.</p></li>
+<li><p><em>average_r</em>: correlación promedio entre los ítemes. Es el
+valor promedio de correlación entre los ítem. Cuanto más cercano sea
+este valor a 1, los ítems han tenido más asociación entre ellos. Este
+resultado nos ilustra que es posible obtener valores altos de Alfa,
+aunque los reactivos no tengan correlaciones fuertes entre ellos. Por lo
+tanto, no podemos asumir que tenemos ítems con una fuerte asociación
+entre ellos únicamente a partir del valor de Alfa, necesitamos explorar
+estos resultados primero.</p></li>
+<li><p><em>95% confidence boundaries</em>: es el intervalo de confianza
+al 95% del valor de Alfa calculado. Se nos muestra el valor del límite
+inferior (lower) y superior (upper) del intervalo. Intervalos amplios
+nos indican que el valor de Alfa tiene un mayor error de medida, por lo
+que debemos ser cuidadosos en las interpretaciones que hagamos y las
+decisiones que tomemos.</p></li>
+<li><p><em>Reliability if an item is dropped</em>: medida de
+confiabilidad si un ítem es quitado). Esta tabla nos muestra cómo
+cambiaría Alfa y los demás indicadores de confiabilidad si un ítem se
+quita de la escala analizada. Habrá casos en los que Alfa mejora al
+quitar un ítem. La decisión de efectivamente quitar un ítem depende de
+que tanto mejora la confiabilidad y en qué medida se afecta la validez
+de la escala. Este puede convertirse en un proceso iterativo, en el que
+después de quitar ítems, volvemos a calcular el Alfa de Cronbach, y nos
+encontramos que aún puede mejorar nuestra confiabilidad quitando un ítem
+distinto. Es necesario considerar las características particulares de
+cada escala para encontrar un balance entre ganancias o perdidas en
+confiabilidad y la integridad de la escala. También es necesario tomar
+en cuenta los demás resultados reportados en este análisis con respecto
+a cada ítem.</p></li>
+<li><p><em>Non missing response frequency for each item</em>: medida de
+frecuencia de respuesta no perdida para cada ítem; proporción de
+respuesta para cada opción posible para cada uno de los ítemes,
+incluidas las respuestas perdidas. Esta información es útil para el
+análisis de resultados inusuales.</p></li>
 </ul>
-<p>Se han revisado las medidas derivadas de la obtención del coeficiente Alfa de Cronbach, así como la manera de interpretar este coeficiente y los resultados asociados a él más relevantes. Los resultados obtenidos de la función <code>alpha()</code> nos pueden ayudar a un mejor análisis de la confiabilidad e una escala, pero es importante recordar qué puede y qué no puede decirnos el coeficiente Alfa de Cronbach con respecto a una escala psicométrica, para evitar malas interpretaciones. El Alfa de Cronbach nos da una medida de la consistencia interna de una escala, que sus ítems apuntan en la misma dirección, pero no nos dice nada sobre su validez o la calidad de sus reactivos. Estas son características diferentes de las escalas que requieren de otros análisis.</p>
+<p>Se han revisado las medidas derivadas de la obtención del coeficiente
+Alfa de Cronbach, así como la manera de interpretar este coeficiente y
+los resultados asociados a él más relevantes. Los resultados obtenidos
+de la función <code>alpha()</code> nos pueden ayudar a un mejor análisis
+de la confiabilidad e una escala, pero es importante recordar qué puede
+y qué no puede decirnos el coeficiente Alfa de Cronbach con respecto a
+una escala psicométrica, para evitar malas interpretaciones. El Alfa de
+Cronbach nos da una medida de la consistencia interna de una escala, que
+sus ítems apuntan en la misma dirección, pero no nos dice nada sobre su
+validez o la calidad de sus reactivos. Estas son características
+diferentes de las escalas que requieren de otros análisis.</p>
 <p>Aquí mostramos los resultados de este análisis.</p>
 <div id="escala-de-ansiedad" class="section level2">
 <h2>Escala de ansiedad</h2>
@@ -369,8 +433,10 @@ $(document).ready(function () {
 ##   raw_alpha std.alpha G6(smc) average_r S/N   ase mean   sd median_r
 ##       0.85      0.85    0.84      0.54 5.9 0.012  1.8 0.91     0.52
 ## 
-##  lower alpha upper     95% confidence boundaries
-## 0.83 0.85 0.87 
+##     95% confidence boundaries 
+##          lower alpha upper
+## Feldt     0.83  0.85  0.87
+## Duhachek  0.83  0.85  0.87
 ## 
 ##  Reliability if an item is dropped:
 ##          raw_alpha std.alpha G6(smc) average_r S/N alpha se  var.r med.r
@@ -405,8 +471,10 @@ $(document).ready(function () {
 ##   raw_alpha std.alpha G6(smc) average_r S/N   ase mean  sd median_r
 ##        0.8       0.8    0.77       0.5   4 0.016  1.9 0.9     0.48
 ## 
-##  lower alpha upper     95% confidence boundaries
-## 0.77 0.8 0.83 
+##     95% confidence boundaries 
+##          lower alpha upper
+## Feldt     0.76   0.8  0.83
+## Duhachek  0.77   0.8  0.83
 ## 
 ##  Reliability if an item is dropped:
 ##          raw_alpha std.alpha G6(smc) average_r S/N alpha se  var.r med.r
@@ -439,8 +507,10 @@ $(document).ready(function () {
 ##   raw_alpha std.alpha G6(smc) average_r S/N    ase mean  sd median_r
 ##       0.88      0.89    0.89      0.53   8 0.0089    2 0.9     0.55
 ## 
-##  lower alpha upper     95% confidence boundaries
-## 0.86 0.88 0.9 
+##     95% confidence boundaries 
+##          lower alpha upper
+## Feldt     0.86  0.88   0.9
+## Duhachek  0.86  0.88   0.9
 ## 
 ##  Reliability if an item is dropped:
 ##          raw_alpha std.alpha G6(smc) average_r S/N alpha se  var.r med.r
@@ -476,10 +546,17 @@ $(document).ready(function () {
 <div id="referencias" class="section level1">
 <h1>Referencias</h1>
 <ul>
-<li><p>Bosco, J., (2018). Alfa de Cronbach - Psicometría con R, visitado en <a href="https://rpubs.com/jboscomendoza/alfa_cronbach_r" class="uri">https://rpubs.com/jboscomendoza/alfa_cronbach_r</a></p></li>
-<li><p>Cortina, J. M. (1993). What is Coefficient Alpha? An Examination of Theory and Applications. Journal of Applied Psychology, 78(1), 98-104.</p></li>
-<li><p>Graham, J. M. (2006). Congeneric and (Essentially) Tau-Equivalent Estimates of Score Reliability: What They Are and How to Use Them. Educational and Psychological Measurement, 66(6), 930-944.</p></li>
-<li><p>Sijtsma, K. (2009). On the Use, the Misuse, and the Very Limited Usefulness of Cronbach’s Alpha. Psychometrika, 74(1), 107-120.</p></li>
+<li><p>Bosco, J., (2018). Alfa de Cronbach - Psicometría con R, visitado
+en <a href="https://rpubs.com/jboscomendoza/alfa_cronbach_r"
+class="uri">https://rpubs.com/jboscomendoza/alfa_cronbach_r</a></p></li>
+<li><p>Cortina, J. M. (1993). What is Coefficient Alpha? An Examination
+of Theory and Applications. Journal of Applied Psychology, 78(1),
+98-104.</p></li>
+<li><p>Graham, J. M. (2006). Congeneric and (Essentially) Tau-Equivalent
+Estimates of Score Reliability: What They Are and How to Use Them.
+Educational and Psychological Measurement, 66(6), 930-944.</p></li>
+<li><p>Sijtsma, K. (2009). On the Use, the Misuse, and the Very Limited
+Usefulness of Cronbach’s Alpha. Psychometrika, 74(1), 107-120.</p></li>
 </ul>
 </div>
 

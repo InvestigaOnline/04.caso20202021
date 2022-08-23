@@ -13,7 +13,7 @@
 
 <title>Objetivos y necesidades de información</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -61,6 +61,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -85,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -237,7 +241,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -250,7 +254,7 @@ $(document).ready(function () {
   <a href="index.html">Introducción</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Preliminares
      
     <span class="caret"></span>
@@ -271,7 +275,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Resultados
      
     <span class="caret"></span>
@@ -345,44 +349,133 @@ $(document).ready(function () {
 </div>
 
 
-<div id="descripción-del-problema-de-investigación" class="section level1">
+<div id="descripción-del-problema-de-investigación"
+class="section level1">
 <h1>Descripción del problema de investigación</h1>
-<p>Una pandemia mundial es un territorio desconocido para todos, especialmente para los consumidores. Las personas se han visto obligadas a adaptarse a las restricciones personales, a la escasez de productos y la pérdida de puestos de trabajo, algo que en tiempos anteriores sólo ha correspondido a períodos de guerra o entreguerras. Se han experimentado nuevas realidades en lo que respecta a las relaciones con la familia, nuestra relación con el centro de estudios y/o trabajo, nuestro ecosistema de higiene personal y nuestra relación con el ocio y entretenimiento tanto personal como de grupo (Greenbook, 2020).</p>
-<p>A ello debemos sumar que “la crisis de la COVID-19 golpea a una sociedad con alrededor de un 33% de sus hogares en situación muy vulnerable financieramente, es decir con capacidad de aguantar menos de 3 meses, lo que se corresponde con los meses previos al verano donde gran parte de la actividad económica en España se mantendrá paralizada. Otro 24% de los hogares enfrenta la crisis con una situación vulnerable financieramente (aguantando de 3-9 meses), mientras que un 43% lo hace con una mayor seguridad financiera (más de 9 meses), pudiendo aguantar hasta 2021” (Arellano y Cámara, 2020).</p>
-<p>La sociedad española ha pasado, al igual que sus conciudadanos europeos por diferentes estados emocionales que retratan su comportamiento actual y futuro. Se ha pasado de la tristeza por lo que quedó en el camino, material, inmaterial y personal a aceptar con resignación lo sucedido y no acabar de entender la situación actual en la que se desea ver un futuro (TCA, 2020). Suponemos que el nuevo estado de alarma, decretado hoy 25 de octubre de 2020, alimentará más esa sensación de desconcierto y frustración que ya se intuía en la sociedad.</p>
-<p>En diferentes mercados y áreas económicas se han realizado diferentes investigaciones. Desde Jordania, Hashem (2020) ha demostrado que la COVID-19 ha potenciado la tendencia hacia el e-shopping y también ha mostrado un cambio de actitudes hacia el comercio online, pero aun así, la localización forzada del consumo que surge de la presencia de la COVID-19 plantea serias dudas sobre la capacidad de respuesta de las regiones. Desde Austria y Suecia, Vancic y Pärson (2020) indican que hay un cambio en el comportamiento de compra más allá del comportamiento de pánico, ya que la sensibilidad al precio ha aumentado y las percepciones sobre la calidad, en particular sobre la alimentación, han cambiado durante la pandemia. Desde USA, Zwanka y Buff (2020) listan la serie de cambios que han podido analizar en su análisis de cohortes generacionales (1) preferencia por el localismo o nacionalismo como seguridad de la cadena de suministro, (2) mayor cantidad de pedidos en línea, (3) retorno al hedonismo y a la búsqueda de experiencias ante el temor del contagio y muerte, (4) cambio en los hábitos de trabajo y en reconocimiento a los trabajadores sociales (sanitarios, cuidadores …) (5) descontento político, (6) uso de transacciones online antes no disponibles de forma básica (atención médica, enseñanza…) (7) la realidad virtual reemplazando a los viajes, (8) mayor foco en la administración de lo que nos rodea, (9) buscar relaciones seguras, (10) cambios en actitud hacia la vida y en las creencias, (11) una mayor creencia positiva hacia el bien global más que hacia las libertades individuales. También Goff et al. (2020) aprovechan su estudio continuo en USA para medir la diferencia entre la fase prepandémica y la pandémica, concluyendo que existen diferencias importantes en la actitud hacia los gobiernos y los mercados. Beck y Hensher (2020) ha mostrado también como los australianos han modificado sus hábitos de consumo y viaje, con gran resiliencia y adaptabilidad.</p>
-<p>Es por ello que es necesario realizar más investigaciones para comprender mejor estos cambios en el consumo con un examen directo de las percepciones de riesgo de los consumidores junto con otros datos empíricos y realizarse como parte del desarrollo de una comprensión integral basada en la teoría de las implicaciones del desplazamiento del consumo (Hall et al, 2020).</p>
-<p>En lo que respecta a las marcas, durante la pandemia ha existido una mayor sensación de que las empresas tienen una seria responsabilidad social de hacer lo correcto: proteger la seguridad de los empleados y consumidores, salvaguardar los puestos de trabajo, compartir los sacrificios de manera justa con los líderes superiores y responder con esfuerzos de ayuda comunitaria y filantropía (Greenbook 2020). Bajo la atención de los stakeholders, las industrias que están en primera línea para atender nuestras necesidades son las que están recibiendo más críticas. Las tiendas, el comercio minorista, los restaurantes y las farmacias enfrentan una fuerte presión pública para responder a la COVID-19.</p>
-<p>Así pues, comenzar a redefinir los perfiles de sus clientes ahora y seguir ajustando nuestra estrategia de marketing a medida que se obtenga nueva información, se convierte en una obligación y ello nos llevará al orden y la estabilidad en nuestra relación con el cliente. Las soluciones desarrolladas deberán ofrecer al cliente una sensación de seguridad y control en sus vidas y en su relación con las marcas, su marca. (Greenbook 2020). Así creemos que los objetivos a desarrollar en esta investigación deben estar centrados en estas cinco áreas de trabajo.</p>
+<p>Una pandemia mundial es un territorio desconocido para todos,
+especialmente para los consumidores. Las personas se han visto obligadas
+a adaptarse a las restricciones personales, a la escasez de productos y
+la pérdida de puestos de trabajo, algo que en tiempos anteriores sólo ha
+correspondido a períodos de guerra o entreguerras. Se han experimentado
+nuevas realidades en lo que respecta a las relaciones con la familia,
+nuestra relación con el centro de estudios y/o trabajo, nuestro
+ecosistema de higiene personal y nuestra relación con el ocio y
+entretenimiento tanto personal como de grupo (Greenbook, 2020).</p>
+<p>A ello debemos sumar que “la crisis de la COVID-19 golpea a una
+sociedad con alrededor de un 33% de sus hogares en situación muy
+vulnerable financieramente, es decir con capacidad de aguantar menos de
+3 meses, lo que se corresponde con los meses previos al verano donde
+gran parte de la actividad económica en España se mantendrá paralizada.
+Otro 24% de los hogares enfrenta la crisis con una situación vulnerable
+financieramente (aguantando de 3-9 meses), mientras que un 43% lo hace
+con una mayor seguridad financiera (más de 9 meses), pudiendo aguantar
+hasta 2021” (Arellano y Cámara, 2020).</p>
+<p>La sociedad española ha pasado, al igual que sus conciudadanos
+europeos por diferentes estados emocionales que retratan su
+comportamiento actual y futuro. Se ha pasado de la tristeza por lo que
+quedó en el camino, material, inmaterial y personal a aceptar con
+resignación lo sucedido y no acabar de entender la situación actual en
+la que se desea ver un futuro (TCA, 2020). Suponemos que el nuevo estado
+de alarma, decretado hoy 25 de octubre de 2020, alimentará más esa
+sensación de desconcierto y frustración que ya se intuía en la
+sociedad.</p>
+<p>En diferentes mercados y áreas económicas se han realizado diferentes
+investigaciones. Desde Jordania, Hashem (2020) ha demostrado que la
+COVID-19 ha potenciado la tendencia hacia el e-shopping y también ha
+mostrado un cambio de actitudes hacia el comercio online, pero aun así,
+la localización forzada del consumo que surge de la presencia de la
+COVID-19 plantea serias dudas sobre la capacidad de respuesta de las
+regiones. Desde Austria y Suecia, Vancic y Pärson (2020) indican que hay
+un cambio en el comportamiento de compra más allá del comportamiento de
+pánico, ya que la sensibilidad al precio ha aumentado y las percepciones
+sobre la calidad, en particular sobre la alimentación, han cambiado
+durante la pandemia. Desde USA, Zwanka y Buff (2020) listan la serie de
+cambios que han podido analizar en su análisis de cohortes
+generacionales (1) preferencia por el localismo o nacionalismo como
+seguridad de la cadena de suministro, (2) mayor cantidad de pedidos en
+línea, (3) retorno al hedonismo y a la búsqueda de experiencias ante el
+temor del contagio y muerte, (4) cambio en los hábitos de trabajo y en
+reconocimiento a los trabajadores sociales (sanitarios, cuidadores …)
+(5) descontento político, (6) uso de transacciones online antes no
+disponibles de forma básica (atención médica, enseñanza…) (7) la
+realidad virtual reemplazando a los viajes, (8) mayor foco en la
+administración de lo que nos rodea, (9) buscar relaciones seguras, (10)
+cambios en actitud hacia la vida y en las creencias, (11) una mayor
+creencia positiva hacia el bien global más que hacia las libertades
+individuales. También Goff et al. (2020) aprovechan su estudio continuo
+en USA para medir la diferencia entre la fase prepandémica y la
+pandémica, concluyendo que existen diferencias importantes en la actitud
+hacia los gobiernos y los mercados. Beck y Hensher (2020) ha mostrado
+también como los australianos han modificado sus hábitos de consumo y
+viaje, con gran resiliencia y adaptabilidad.</p>
+<p>Es por ello que es necesario realizar más investigaciones para
+comprender mejor estos cambios en el consumo con un examen directo de
+las percepciones de riesgo de los consumidores junto con otros datos
+empíricos y realizarse como parte del desarrollo de una comprensión
+integral basada en la teoría de las implicaciones del desplazamiento del
+consumo (Hall et al, 2020).</p>
+<p>En lo que respecta a las marcas, durante la pandemia ha existido una
+mayor sensación de que las empresas tienen una seria responsabilidad
+social de hacer lo correcto: proteger la seguridad de los empleados y
+consumidores, salvaguardar los puestos de trabajo, compartir los
+sacrificios de manera justa con los líderes superiores y responder con
+esfuerzos de ayuda comunitaria y filantropía (Greenbook 2020). Bajo la
+atención de los stakeholders, las industrias que están en primera línea
+para atender nuestras necesidades son las que están recibiendo más
+críticas. Las tiendas, el comercio minorista, los restaurantes y las
+farmacias enfrentan una fuerte presión pública para responder a la
+COVID-19.</p>
+<p>Así pues, comenzar a redefinir los perfiles de sus clientes ahora y
+seguir ajustando nuestra estrategia de marketing a medida que se obtenga
+nueva información, se convierte en una obligación y ello nos llevará al
+orden y la estabilidad en nuestra relación con el cliente. Las
+soluciones desarrolladas deberán ofrecer al cliente una sensación de
+seguridad y control en sus vidas y en su relación con las marcas, su
+marca. (Greenbook 2020). Así creemos que los objetivos a desarrollar en
+esta investigación deben estar centrados en estas cinco áreas de
+trabajo.</p>
 <ul>
-<li>Analizar el impacto psicológico de la COVID-19 sobre el consumidor -ansiedad, temor, obsesión (escalas) -</li>
-<li>Identificar los cambios en la UX de shopping del consumidor (actual, durante) pandemia</li>
-<li>Identificar nuevos patrones de UX y comportamiento de compra en la nueva normalidad (vacuna ya existente)</li>
-<li>Valorar cómo la sociedad que nos rodea ha actuado en la gestión: instituciones, empresas, marcas y ciudadanía en general</li>
+<li>Analizar el impacto psicológico de la COVID-19 sobre el consumidor
+-ansiedad, temor, obsesión (escalas) -</li>
+<li>Identificar los cambios en la UX de shopping del consumidor (actual,
+durante) pandemia</li>
+<li>Identificar nuevos patrones de UX y comportamiento de compra en la
+nueva normalidad (vacuna ya existente)</li>
+<li>Valorar cómo la sociedad que nos rodea ha actuado en la gestión:
+instituciones, empresas, marcas y ciudadanía en general</li>
 <li>Perfilar el target</li>
 </ul>
 </div>
-<div id="resumen-de-objetivos-y-necesidades-de-información" class="section level1">
+<div id="resumen-de-objetivos-y-necesidades-de-información"
+class="section level1">
 <h1>Resumen de objetivos y necesidades de información</h1>
-<p>Para poder alcanzar estos objetivos y tras una reflexión profunda, creemos preciso alcanzar las siguientes necesidades de información que aquí listamos brevemente.</p>
+<p>Para poder alcanzar estos objetivos y tras una reflexión profunda,
+creemos preciso alcanzar las siguientes necesidades de información que
+aquí listamos brevemente.</p>
 <ol style="list-style-type: decimal">
-<li>Analizar el impacto psicológico de la COVID-19 sobre el consumidor -estrés, miedo, obsesión (escalas) -
+<li>Analizar el impacto psicológico de la COVID-19 sobre el consumidor
+-estrés, miedo, obsesión (escalas) -
 <ol style="list-style-type: decimal">
 <li>Escala de ansiedad (Lee, 2020).</li>
 <li>Escala de obsesión (Lee, 2020).</li>
 <li>Escala de temor (Ahorsu, et al., 2020).</li>
-<li>Descripción personal (adjetiva, posible cualitativo) del estado de ánimo ante la situación.</li>
+<li>Descripción personal (adjetiva, posible cualitativo) del estado de
+ánimo ante la situación.</li>
 <li>Conciencia de cambio permanente en la realidad.</li>
 <li>Incidencia de la COVID-19 en la sociedad futura y su realidad.</li>
-<li>Valoración de la creencia de exposición a la COVID-19 en la realización de las compras en establecimientos físicos.</li>
+<li>Valoración de la creencia de exposición a la COVID-19 en la
+realización de las compras en establecimientos físicos.</li>
 </ol></li>
-<li>Identificar los cambios en la UX de shopping del consumidor (actual, durante) pandemia
+<li>Identificar los cambios en la UX de shopping del consumidor (actual,
+durante) pandemia
 <ol style="list-style-type: decimal">
-<li>Valoración del nivel de preocupación actual ante el entorno más próximo de compras</li>
+<li>Valoración del nivel de preocupación actual ante el entorno más
+próximo de compras</li>
 <li>Identificación de cambios en el patrón de compra en cuanto a …
 <ol style="list-style-type: decimal">
 <li>Número de tiendas en las que compraba</li>
-<li>Aumento o disminución en la actualidad de la frecuencia de compra</li>
+<li>Aumento o disminución en la actualidad de la frecuencia de
+compra</li>
 <li>Identificar cambios en unidades por compra</li>
 <li>Identificar cambios en cantidades (mayor o menor gasto)</li>
 </ol></li>
@@ -393,14 +486,19 @@ $(document).ready(function () {
 </ol></li>
 <li>Afectación a hábitos futuros en la forma de compra</li>
 <li>Cambio de marcas, falta de marcas en lineal, desabastecimiento</li>
-<li>Consecuencias negativas de la pandemia para la sociedad (¿abierta?)</li>
-<li>Consecuencias positivas de la pandemia para la sociedad (¿abierta?)</li>
+<li>Consecuencias negativas de la pandemia para la sociedad
+(¿abierta?)</li>
+<li>Consecuencias positivas de la pandemia para la sociedad
+(¿abierta?)</li>
 </ol></li>
-<li>Identificar nuevos patrones de UX y comportamiento de compra en la nueva normalidad
+<li>Identificar nuevos patrones de UX y comportamiento de compra en la
+nueva normalidad
 <ol style="list-style-type: decimal">
-<li>Identificar cambios en patrón de compra (repetir estructura objetivo 2)
+<li>Identificar cambios en patrón de compra (repetir estructura objetivo
+2)
 <ol style="list-style-type: decimal">
-<li>Aumento o disminución en la actualidad de la frecuencia de compra</li>
+<li>Aumento o disminución en la actualidad de la frecuencia de
+compra</li>
 <li>Identificar cambios en unidades por compra</li>
 <li>Identificar cambios en cantidades (mayor o menor gasto)</li>
 </ol></li>
@@ -410,12 +508,16 @@ $(document).ready(function () {
 <li>Cambios de importancia en factores esenciales de compra</li>
 <li>Medidas que ayudan a sentirse más cómodos</li>
 <li>Valoración de medidas de cambio</li>
-<li>Qué actividades se realizarán más y qué actividades de dejarán de hacer</li>
+<li>Qué actividades se realizarán más y qué actividades de dejarán de
+hacer</li>
 </ol></li>
-<li>Valorar cómo la sociedad que nos rodea ha actuado en la gestión: instituciones, empresas, marcas y ciudadanía en general
+<li>Valorar cómo la sociedad que nos rodea ha actuado en la gestión:
+instituciones, empresas, marcas y ciudadanía en general
 <ol style="list-style-type: decimal">
-<li>Conocer qué marcas han respondido mejor a la situación vivida [abierta]</li>
-<li>Conocer qué instituciones han respondido mejor a la situación vivida</li>
+<li>Conocer qué marcas han respondido mejor a la situación vivida
+[abierta]</li>
+<li>Conocer qué instituciones han respondido mejor a la situación
+vivida</li>
 <li>Conocer qué sectores han respondido mejor a la situación vivida</li>
 </ol></li>
 <li>Perfilar el target
@@ -430,7 +532,8 @@ $(document).ready(function () {
 <li>Sexo del entrevistado</li>
 <li>Edad del entrevistado</li>
 <li>NCS (imputada)</li>
-<li>Conocer si es comprador habitual de productos de alimentación e higiene en el hogar</li>
+<li>Conocer si es comprador habitual de productos de alimentación e
+higiene en el hogar</li>
 </ol></li>
 </ol>
 </div>

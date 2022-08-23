@@ -13,7 +13,7 @@
 
 <title>Verbatim</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -63,6 +63,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -87,6 +88,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -239,7 +243,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -252,7 +256,7 @@ $(document).ready(function () {
   <a href="index.html">Introducción</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Preliminares
      
     <span class="caret"></span>
@@ -273,7 +277,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Resultados
      
     <span class="caret"></span>
@@ -347,18 +351,23 @@ $(document).ready(function () {
 </div>
 
 
-<p>El siguiente documento presenta el resultado de la codificación de las preguntas abiertas. El procedimiento seguido ha sido el estándar:</p>
+<p>El siguiente documento presenta el resultado de la codificación de
+las preguntas abiertas. El procedimiento seguido ha sido el
+estándar:</p>
 <ul>
 <li>verbatim de los literales</li>
 <li>creación de claves</li>
 <li>imputación del código clave a registro</li>
 </ul>
-<p>El resultado del proceso se muestra en forma de tabla. Cada tabla tiene los campos:</p>
+<p>El resultado del proceso se muestra en forma de tabla. Cada tabla
+tiene los campos:</p>
 <ul>
 <li>tipo, identifica si es una clave o un literal</li>
-<li>antecesor, identifica si es una clave de nivel superior o una subclave de la anterior (representación de <em>nets</em>)</li>
+<li>antecesor, identifica si es una clave de nivel superior o una
+subclave de la anterior (representación de <em>nets</em>)</li>
 <li>descripción, literal codificado</li>
-<li>código / frecuencia, código de la clave o frecuencia del literal según campo <em>tipo</em>.</li>
+<li>código / frecuencia, código de la clave o frecuencia del literal
+según campo <em>tipo</em>.</li>
 </ul>
 <div id="marcas" class="section level2">
 <h2>Marcas</h2>
@@ -3517,7 +3526,8 @@ LITERAL
 compra organizada
 </td>
 <td style="text-align:left;">
-He comprado con mas cabeza organizando las comidas y cenas semanalmente para no desperdiciar nada.
+He comprado con mas cabeza organizando las comidas y cenas semanalmente
+para no desperdiciar nada.
 </td>
 <td style="text-align:right;">
 1
@@ -3531,7 +3541,8 @@ LITERAL
 compra organizada
 </td>
 <td style="text-align:left;">
-Ir innecesariamente a los supermercados, organizar mejor las listas de compras
+Ir innecesariamente a los supermercados, organizar mejor las listas de
+compras
 </td>
 <td style="text-align:right;">
 1
@@ -3809,7 +3820,8 @@ LITERAL
 más higiene (cantidad y/o gasto)
 </td>
 <td style="text-align:left;">
-más higiene a la hora de traer los productos adquiridos en un supermercado
+más higiene a la hora de traer los productos adquiridos en un
+supermercado
 </td>
 <td style="text-align:right;">
 1
@@ -3907,7 +3919,8 @@ LITERAL
 más higiene (cantidad y/o gasto)
 </td>
 <td style="text-align:left;">
-Menor contacto con el producto porlo que el producto o el packaging no se deterioran tan fácilmente Como en el caso de las rosquillas o papas
+Menor contacto con el producto porlo que el producto o el packaging no
+se deterioran tan fácilmente Como en el caso de las rosquillas o papas
 </td>
 <td style="text-align:right;">
 1
@@ -3921,7 +3934,8 @@ LITERAL
 más higiene (cantidad y/o gasto)
 </td>
 <td style="text-align:left;">
-nos hemos dado cuenta como sociedad que tenemos que tener mas higiene en general
+nos hemos dado cuenta como sociedad que tenemos que tener mas higiene en
+general
 </td>
 <td style="text-align:right;">
 1
@@ -4780,7 +4794,8 @@ LITERAL
 miedo
 </td>
 <td style="text-align:left;">
-Que me cuesta más en salir por precaución y tambien en la desinfección de las compras
+Que me cuesta más en salir por precaución y tambien en la desinfección
+de las compras
 </td>
 <td style="text-align:right;">
 1
@@ -4794,7 +4809,8 @@ LITERAL
 miedo
 </td>
 <td style="text-align:left;">
-la ignorancia es grata, ahora que sabemos todo lo que se puede transmitir, me parece que todos estamos un poco freaky
+la ignorancia es grata, ahora que sabemos todo lo que se puede
+transmitir, me parece que todos estamos un poco freaky
 </td>
 <td style="text-align:right;">
 1
@@ -4919,7 +4935,8 @@ LITERAL
 mayor tiempo / menos compras
 </td>
 <td style="text-align:left;">
-Si me falta algo de la compra o se me olvida no bajo a comprarlo me espero a la siguiente compra grande
+Si me falta algo de la compra o se me olvida no bajo a comprarlo me
+espero a la siguiente compra grande
 </td>
 <td style="text-align:right;">
 1
@@ -5016,7 +5033,8 @@ LITERAL
 más compras / acumular
 </td>
 <td style="text-align:left;">
-Que al principio te puede el ansia de comprar mucho por el hecho de no saber que va a pasar
+Que al principio te puede el ansia de comprar mucho por el hecho de no
+saber que va a pasar
 </td>
 <td style="text-align:right;">
 1
@@ -5099,7 +5117,8 @@ LITERAL
 medidas de seguridad personal
 </td>
 <td style="text-align:left;">
--más colas en compras presenciales Tener que estar pendiente de mantener distancias y que nadie se te acerque
+-más colas en compras presenciales Tener que estar pendiente de mantener
+distancias y que nadie se te acerque
 </td>
 <td style="text-align:right;">
 1
@@ -5113,7 +5132,8 @@ LITERAL
 medidas de seguridad personal
 </td>
 <td style="text-align:left;">
-Antes ir a hacer la compra era un momento en el que te detenías y mirabas más ahora vas en alerta
+Antes ir a hacer la compra era un momento en el que te detenías y
+mirabas más ahora vas en alerta
 </td>
 <td style="text-align:right;">
 1
@@ -5127,7 +5147,8 @@ LITERAL
 medidas de seguridad personal
 </td>
 <td style="text-align:left;">
-El horario de realizar la compra, cuando hay menos afluencia de personas en los comercios
+El horario de realizar la compra, cuando hay menos afluencia de personas
+en los comercios
 </td>
 <td style="text-align:right;">
 1

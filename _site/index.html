@@ -14,7 +14,7 @@
 
 <title>Covid-19 - Curso 2020 / 2021</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -86,6 +87,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -238,7 +242,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -251,7 +255,7 @@ $(document).ready(function () {
   <a href="index.html">Introducción</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Preliminares
      
     <span class="caret"></span>
@@ -272,7 +276,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Resultados
      
     <span class="caret"></span>
@@ -342,9 +346,10 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Covid-19 - Curso 2020 / 2021</h1>
-<h3 class="subtitle">Universitat de València - Universidad Católica de València</h3>
+<h3 class="subtitle">Universitat de València - Universidad Católica de
+València</h3>
 <h4 class="author">Roberto Gil-Saura</h4>
-<h4 class="date">Última actualización en 2021-11-09</h4>
+<h4 class="date">Última actualización en 2022-08-23</h4>
 
 </div>
 
@@ -352,11 +357,22 @@ $(document).ready(function () {
 <div id="introducción" class="section level1">
 <h1>Introducción</h1>
 <blockquote>
-<p>Documento redactado con fines académicos, en desarrollo y no revisado.</p>
+<p>Documento redactado con fines académicos, en desarrollo y no
+revisado.</p>
 </blockquote>
 <p>NOTA DEL AUTOR:</p>
-<p><strong><em>El presente texto fue redactado con el ánimo de realizar un análisis de situación de tema de trabajado seleccionado para este año. Los alumnos realizaron una búsqueda de fuentes bibliográficas y redactaron un documento similar a éste, cada uno con sus fuentes de información. El objetivo era realizar una aproximación personal al tema de trabajo y así poder ver de primera mano el estado de la situación, qué se estaba escribiendo, cómo, etc. . Para la mayoría de los alumnos este trabajo fue la primera vez que se aproximaban a una investigación de este tipo, un proyecto de investigación comercial o de mercados completo.</em></strong></p>
-<p><strong><em>Este texto fue la solución aportada por el docente a la tarea inicial de análisis de situación.</em></strong></p>
+<p><strong><em>El presente texto fue redactado con el ánimo de realizar
+un análisis de situación de tema de trabajado seleccionado para este
+año. Los alumnos realizaron una búsqueda de fuentes bibliográficas y
+redactaron un documento similar a éste, cada uno con sus fuentes de
+información. El objetivo era realizar una aproximación personal al tema
+de trabajo y así poder ver de primera mano el estado de la situación,
+qué se estaba escribiendo, cómo, etc. . Para la mayoría de los alumnos
+este trabajo fue la primera vez que se aproximaban a una investigación
+de este tipo, un proyecto de investigación comercial o de mercados
+completo.</em></strong></p>
+<p><strong><em>Este texto fue la solución aportada por el docente a la
+tarea inicial de análisis de situación.</em></strong></p>
 </div>
 
 <br>
